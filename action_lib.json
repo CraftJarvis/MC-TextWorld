@@ -1,4 +1,10 @@
 {
+    "no_op": {
+        "output": {},
+        "type": "no_op",
+        "precondition": {},
+        "tool": {}
+    },
     "mine_log": {
         "output": {"log": 1},
         "type": "mine",
