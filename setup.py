@@ -1,13 +1,12 @@
 from setuptools import setup, find_packages
-from codecs import open
-from os import path
+
 setup(
-    name='mc-textworld',
-    version='1.0',
+    name='mctextworld',
+    version='1.0.2',
     description='A text world based on Minecraft rules.',
     long_description='',
     # The project's main homepage.
-    url='craftjarvis.org',
+    url='https://zhwang4ai.github.io/',
     # Author details
     author='wangzihao',
     author_email='zhwang@stu.pku.edu.cn',
@@ -23,6 +22,6 @@ setup(
         'Programming Language :: Python :: 3.9',
         'Programming Language :: Python :: 3.10',
     ],
-    py_modules=["mc-textworld"],
+    py_modules=["mctextworld"],
     install_requires=['gym']
 )
