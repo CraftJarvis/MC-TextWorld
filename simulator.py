@@ -85,7 +85,7 @@ class Env(gym.Env):
                 break
         
         if not pre_flag:
-            return self.state, 0, self.done, {}
+            return self.state, 0, self.done, {'success': False}
 
         # Execute action
         for key, val in goal['precondition'].items():
@@ -109,7 +109,7 @@ class Env(gym.Env):
         if is_done:
             self.done = True
 
-        return self.state, 1, self.done, {}
+        return self.state, 0, self.done, {'success': True}
 
     # def check_item(self, item:str):
     #     if item in self.state['inventory'].keys():
