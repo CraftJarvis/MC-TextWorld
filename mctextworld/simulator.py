@@ -6,8 +6,8 @@ import gym
 from gym import spaces
 from gym.utils import seeding
 
-from action import ActionLibrary
-from utils import *
+from mctextworld.action import ActionLibrary
+from mctextworld.utils import *
 
 MAXIMUM_STEP = 100
 

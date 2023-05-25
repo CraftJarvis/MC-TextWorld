@@ -1,4 +1,4 @@
-from action import ActionLibrary
+from mctextworld.action import ActionLibrary
 
 class Agent:
     '''

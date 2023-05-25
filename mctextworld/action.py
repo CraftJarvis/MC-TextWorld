@@ -1,6 +1,7 @@
-from utils import *
 import os
 import json
+
+from mctextworld.utils import *
 
 class ActionLibrary:
     '''
