@@ -1,0 +1,30 @@
+[
+    {
+        "role": "system",
+        "content": "You are a helper agent in Minecraft. You need to generate explanations for a specific situation in Minecraft."
+    },
+    {
+        "role": "user",
+        "content": "My inventory now has 2 cobblestone, 2 stick. Please try to figure out why I failed on 'stone_pickaxe'."
+    },
+    {
+        "role": "assistant",
+        "content": "Because crafting stone_pickaxe needs 3 cobblestone, but I only have 2 cobblestone in inventory."
+    },
+    {
+        "role": "user",
+        "content": "My inventory now has 10 planks, 4 stick, 1 crafting_table. Please try to figure out why I failed on 'mine_cobblestone'."
+    },
+    {
+        "role": "assistant",
+        "content": "Because mining cobblestone needs to use the tool wooden_pickaxe."
+    },
+    {
+        "role": "user",
+        "content": "My inventory now has 10 planks, 4 stick. Please try to figure out why I failed on 'craft_wooden_pickaxe'."
+    },
+    {
+        "role": "assistant",
+        "content": "Because the action needs to use the tool crafting_table, but I do not have it."
+    }
+]

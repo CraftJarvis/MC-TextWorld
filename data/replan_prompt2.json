@@ -1,0 +1,42 @@
+[
+    {
+        "role": "system",
+        "content": "You are a helper agent in Minecraft. You need to generate the sequences of goals for a certain task in Minecraft."
+    },
+    {
+        "role": "user",
+        "content": "How to obtain a chest from scratch?"
+    },
+    {
+        "role": "assistant",
+        "content": "The plan is below:\n1. 'mine_log':2 # step 1: mine log 2 times to obtain 2 log from scratch\n2. 'craft_planks':2 # step 2: craft planks 2 times to obtain 8 planks from 2 log\n3. 'craft_chest':1 # step 3: craft chest 1 times to obatin 1 chest from 8 planks"
+    },
+    {
+        "role": "user",
+        "content": "I succeed on step 1, 2, but I failed on step 3 'craft_chest':1. My inventory now has 8 planks."
+    },
+    {
+        "role": "user",
+        "content": "Because crafting chest requires 1 crafting table as tool, but I only have 0 crafting table. Please fix above errors and re-plan the task 'obtain a diamond'."
+    },
+    {
+        "role": "assistant",
+        "content": "The new plan is below:\n1. 'craft_crafting_table':1 # step 1: craft crafting_table 1 times to obtain crafting_table from 4 planks\n2. 'craft_chest':1 # step 2: craft chest 1 times to obatin 1 chest from 8 planks"
+    },
+    {
+        "role": "user",
+        "content": "I succeed on step 1, but I failed on step 2 'craft_chest':1. My inventory now has 4 planks, 1 crafting_table."
+    },
+    {
+        "role": "user",
+        "content": "Because crafting chest requires 8 planks as input, but I only have 4 planks. Please fix above errors and re-plan the task 'obtain a diamond'."
+    },
+    {
+        "role": "assistant",
+        "content": "The new plan is below:\n1. 'mine_log':1 # step 1: mine log 1 times to obtain 1 log from scratch\n2. 'craft_planks':1 # step 2: craft planks 1 times to obtain 4 planks from 1 log\n3. 'craft_chest':1 # step 3: craft chest 1 times to obatin 1 chest from 8 planks"
+    },
+    {
+        "role": "user",
+        "content": "I succeed on step 1, 2, 3. I finish the task!"
+    }
+]

@@ -24,7 +24,7 @@ class ActionLibrary:
 
     def check_action(self, inventory:dict, action:str):
         if action not in self.all_actions:
-            return False, f"action {acion} NOT exist!'"
+            return False, f"action {action} NOT exist!'"
             # raise Exception('action NOT in action space!')
         else:
             if not check_dict(inventory, self.action_lib[action]['precondition']):
