@@ -7,6 +7,7 @@ from gym import spaces
 from gym.utils import seeding
 
 from action import ActionLibrary
+from utils import *
 
 MAXIMUM_STEP = 100
 
@@ -70,11 +71,14 @@ class Env(gym.Env):
             return False
 
     def check_inventory(self, inventory):
+        new_inventory = {}
         for key, val in inventory.items():
             if val < 0:
                 raise Exception('Invalid inventory!')
-            # elif val == 0:
-            #     del inventory[key]
+            elif val > 0:
+                new_inventory[key] = val
+            else:
+                pass
         return inventory
 
     def step(self, action: str):
@@ -86,7 +90,7 @@ class Env(gym.Env):
         self.curr_step += 1
 
         if not res:
-            return self.state, self.reward, self.done, {'success': res, 'message': msg}
+            return self.state, self.reward, self.done, {'action success': res, 'message': msg}
 
         output = self.action_lib.action_lib[action]['output'] # effect 
         precondition = self.action_lib.action_lib[action]['precondition'] # precondition
@@ -150,7 +154,7 @@ class Env(gym.Env):
         self.done = self.check_done(inventory = self.state['inventory'])
         inventory = self.check_inventory(inventory = self.state['inventory'])
 
-        return self.state, self.reward, self.done, {'success': True}
+        return self.state, self.reward, self.done, {'action success': True}
 
     # def check_item(self, item:str):
     #     if item in self.state['inventory'].keys():
@@ -175,19 +179,19 @@ if __name__ == '__main__':
     # print(f'env.state: {env.state}')
     # print(f'env.done: {env.done}')
     # print(f'env.check_item: {env.check_item(env.task_obj)}')
-    for i in range(MAXIMUM_STEP):
-        try:
-            print("Step: ", env.curr_step)
-            print("Candidate Actions: ", env.action_lib.get_candidate_actions(env.state['inventory']))
-            action = input("Action: ")
-            state, reward, done, info = env.step(action)
-            print("State: ", state)
-            print("Reward: ", reward)
-            print("Done: ", done)
-            print("Info: ", info)
-            print("#"*20)
-            if done:
-                print("Task Finished!")
-                break
-        except Exception as e:
-            print(e)
+    # for i in range(MAXIMUM_STEP):
+    #     try:
+    #         print("Step: ", env.curr_step)
+    #         print("Candidate Actions: ", env.action_lib.get_candidate_actions(env.state['inventory']))
+    #         action = input("Action: ")
+    #         state, reward, done, info = env.step(action)
+    #         print("State: ", state)
+    #         print("Reward: ", reward)
+    #         print("Done: ", done)
+    #         print("Info: ", info)
+    #         print("#"*20)
+    #         if done:
+    #             print("Task Finished!")
+    #             break
+    #     except Exception as e:
+    #         print(e)
