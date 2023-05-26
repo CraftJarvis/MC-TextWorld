@@ -1,30 +1,54 @@
 [
     {
         "role": "system",
-        "content": "You are a helper agent in Minecraft. You need to generate explanations for a specific situation in Minecraft."
+        "content": "Here are some actions that the agent fails to perform in Minecraft. Please give the explanation of action execution failure according to the current inventory information of the agent."
     },
     {
         "role": "user",
-        "content": "My inventory now has 2 cobblestone, 2 stick. Please try to figure out why I failed on 'stone_pickaxe'."
+        "content": "Failed Action: mine({'iron_ore':1}, null); # step 5: mine 1 iron_ore without tool\nCurrent Inventory: null"
     },
     {
         "role": "assistant",
-        "content": "Because crafting stone_pickaxe needs 3 cobblestone, but I only have 2 cobblestone in inventory."
+        "content": "Because mining iron_ore needs to use the tool stone_pickaxe, but my inventory does not have stone_pickaxe. So I need to craft stone_pickaxe first."
     },
     {
         "role": "user",
-        "content": "My inventory now has 10 planks, 4 stick, 1 crafting_table. Please try to figure out why I failed on 'mine_cobblestone'."
+        "content": "Failed Action: craft({'stone_pickaxe':1}, {'cobblestone':3, 'stick':2}, 'crafting_table'); # step 1: craft 1 stone_pickaxe from 3 cobblestone and 2 stick, on crafting_table\nCurrent Inventory: null"
     },
     {
         "role": "assistant",
-        "content": "Because mining cobblestone needs to use the tool wooden_pickaxe."
+        "content": "Because crafting stone_pickaxe needs to have 3 cobblestone and 2 stick in inventory, but my inventory does not have cobblestone and stick. So I need to mine cobblestone and craft stick first."
     },
     {
         "role": "user",
-        "content": "My inventory now has 10 planks, 4 stick. Please try to figure out why I failed on 'craft_wooden_pickaxe'."
+        "content": "Failed Action: craft({'stick':4}, {'planks':2}, null); # step 3: craft 4 stick from 2 planks first\nCurrent Inventory: null"
     },
     {
         "role": "assistant",
-        "content": "Because the action needs to use the tool crafting_table, but I do not have it."
+        "content": "Because crafting stick needs to have planks in inventory, but my inventory does not have planks. So I need to craft planks first."
+    },
+    {
+        "role": "user",
+        "content": "Failed Action: mine({'cobblestone':3}, null); # step 4: mine 3 cobblestone without tool\nCurrent Inventory: 7 planks, 8 stick"
+    },
+    {
+        "role": "assistant",
+        "content": "Because mining cobblestone need to use the tool wooden_pickaxe, but my inventory does not have wooden_pickaxe. So I need to craft wooden_pickaxe first."
+    },
+    {
+        "role": "user",
+        "content": "Failed Action: craft({'wooden_pickaxe':3}, {'planks':3, 'stick':2}, null); # step 4: craft 1 wooden_pickaxe from 3 planks and 2 stick\nCurrent Inventory: 14 planks, 4 stick"
+    },
+    {
+        "role": "assistant",
+        "content": "Because crafting wooden_pickaxe needs to use the tool crafting_table, but my inventory does not have crafting_table. So I need to craft 1 crafting_table first."
+    },
+    {
+        "role": "user",
+        "content": "Failed Action: craft({'iron_pickaxe':1}, {'iron_ingot':3, 'stick':2}, 'crafting_table'); # step 11: craft 1 iron_pickaxe from 3 iron_ingot and 2 stick, on crafting_table\nCurrent Inventory: 6 planks, 1 crafting_table, 1 wooden_pickaxe, 5 dirt, 1 stone_pickaxe, 12 cobblestone, 5 stone, 1 iron_ingot, 1 furnace"
+    },
+    {
+        "role": "assistant",
+        "content": "Because crafting iron_pickaxe needs to have 3 iron_ingot and 2 stick in inventory, but my inventory only has 1 iron_ingot, which is not enough for 3 iron_ingot. And my inventory does not have stick. So I need to smelt 2 iron_ingot and craft 2 stick first."
     }
 ]

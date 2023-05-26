@@ -1,0 +1,33 @@
+Here are some actions that the agent fails to perform in Minecraft. Please give the explanation of action execution failure according to the current inventory information of the agent.
+
+###
+Failed Action: mine({'iron_ore':1}, null); # step 5: mine 1 iron_ore without tool
+Current Inventory: null
+Explanation: Because mining iron_ore needs to use the tool stone_pickaxe, but my inventory does not have stone_pickaxe. So I need to craft stone_pickaxe first.
+
+###
+Failed Action: craft({'stone_pickaxe':1}, {'cobblestone':3, 'stick':2}, 'crafting_table'); # step 1: craft 1 stone_pickaxe from 3 cobblestone and 2 stick, on crafting_table
+Current Inventory: null
+Explanation: Because crafting stone_pickaxe needs to have 3 cobblestone and 2 stick in inventory, but my inventory does not have cobblestone and stick. So I need to mine cobblestone and craft stick first.
+
+### 
+Failed Action: craft({'stick':4}, {'planks':2}, null); # step 3: craft 4 stick from 2 planks first
+Current Inventory: null
+Explanation: Because crafting stick needs to have planks in inventory, but my inventory does not have planks. So I need to craft planks first.
+
+###
+Failed Action: mine({'cobblestone':3}, null); # step 4: mine 3 cobblestone without tool
+Current Inventory: 7 planks, 8 stick
+Explanation: Because mining cobblestone need to use the tool wooden_pickaxe, but my inventory does not have wooden_pickaxe. So I need to craft wooden_pickaxe first.
+
+###
+Failed Action: craft({'wooden_pickaxe':3}, {'planks':3, 'stick':2}, null); # step 4: craft 1 wooden_pickaxe from 3 planks and 2 stick
+Current Inventory: 14 planks, 4 stick
+Explanation:  Because crafting wooden_pickaxe needs to use the tool crafting_table, but my inventory does not have crafting_table. So I need to craft 1 crafting_table first.
+
+###
+Failed Action: craft({'iron_pickaxe':1}, {'iron_ingot':3, 'stick':2}, 'crafting_table'); # step 11: craft 1 iron_pickaxe from 3 iron_ingot and 2 stick, on crafting_table
+Current Inventory: 6 planks, 1 crafting_table, 1 wooden_pickaxe, 5 dirt, 1 stone_pickaxe, 12 cobblestone, 5 stone, 1 iron_ingot, 1 furnace,
+Explanation: Because crafting iron_pickaxe needs to have 3 iron_ingot and 2 stick in inventory, but my inventory only has 1 iron_ingot, which is not enough for 3 iron_ingot. And my inventory does not have stick. So I need to smelt 2 iron_ingot and craft 2 stick first.
+
+###
