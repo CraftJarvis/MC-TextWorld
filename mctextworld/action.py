@@ -14,7 +14,11 @@ class ActionLibrary:
     }
     '''
     def __init__(self):
-        self.action_lib_path = os.path.join(os.getcwd(), 'action_lib.json')
+        basepath = os.path.abspath(__file__)
+        folder = os.path.dirname(basepath)
+        data_path = os.path.join(folder, 'action_lib.json')
+        
+        self.action_lib_path = data_path
         self.action_lib = self.load_action_lib()
         self.all_actions = list(self.action_lib.keys())
 
@@ -25,7 +29,7 @@ class ActionLibrary:
 
     def check_action(self, inventory:dict, action:str):
         if action not in self.all_actions:
-            return False, f"action {acion} NOT exist!'"
+            return False, f"action {action} NOT exist!'"
             # raise Exception('action NOT in action space!')
         else:
             if not check_dict(inventory, self.action_lib[action]['precondition']):

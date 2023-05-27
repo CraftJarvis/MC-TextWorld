@@ -42,6 +42,7 @@ class Env(gym.Env):
         self.info = {}
         
         self.curr_step = 0
+        self.executed_actions = []
 
         # return self.state # observation?
         return self.state, self.reward, self.done, self.info
@@ -88,6 +89,8 @@ class Env(gym.Env):
         # Check action validation
         res, msg = self.action_lib.check_action(self.state['inventory'], action)
         self.curr_step += 1
+
+        self.executed_actions.append(action)
 
         if not res:
             return self.state, self.reward, self.done, {'action success': res, 'message': msg}

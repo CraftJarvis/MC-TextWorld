@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='mctextworld',
-    version='1.0.2',
+    version='1.0.3',
     description='A text world based on Minecraft rules.',
     long_description='',
     # The project's main homepage.
