@@ -1,4 +1,4 @@
-from simulator import *
+from mctextworld.simulator import *
 
 def print_candidate_actions(env):
     candidate_actions = env.action_lib.get_candidate_actions(env.state['inventory'])

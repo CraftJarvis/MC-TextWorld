@@ -1,6 +1,7 @@
-from utils import *
 import os
 import json
+
+from mctextworld.utils import *
 
 class ActionLibrary:
     '''
@@ -13,7 +14,11 @@ class ActionLibrary:
     }
     '''
     def __init__(self):
-        self.action_lib_path = os.path.join(os.getcwd(), 'action_lib.json')
+        basepath = os.path.abspath(__file__)
+        folder = os.path.dirname(basepath)
+        data_path = os.path.join(folder, 'action_lib.json')
+        
+        self.action_lib_path = data_path
         self.action_lib = self.load_action_lib()
         self.all_actions = list(self.action_lib.keys())
 
