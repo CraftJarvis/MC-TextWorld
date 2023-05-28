@@ -8,8 +8,8 @@ import copy
 class Summarizer():
     def __init__(self):
         prefix = os.getcwd()
-        self.openai_keys_path = os.path.join(prefix, 'data/openai_keys.txt')
-        self.summarize_prompt_path = os.path.join(prefix, 'data/summarize_prompt.json')
+        self.openai_keys_path = os.path.join(prefix, '../data/openai_keys.txt')
+        self.summarize_prompt_path = os.path.join(prefix, '../data/summarize_prompt.json')
 
         self.openai_keys = self.load_openai_keys()
         self.summarize_prompt = self.load_summarize_prompt()
@@ -64,7 +64,9 @@ class Summarizer():
 if __name__ == "__main__":
     summary = Summarizer()
     # summary.dialogue.append({'role': 'user', 'content': "Human: How to obtain stick?\nAI: The code for obtaining stick is as bellows:\ndef obtain_stick(inventory = {}):\n    mine({'log':2}, null); # action 1: mine 2 log without tool \n    craft({'planks':6}, {'log':2}, null); # action 2: craft 6 planks from 2 log\n    craft({'stick':2}, {'planks':1}, null); # action 3: craft 2 stick from 1 plank\n    return 'stick'\nHuman: I succeed on step 1.\nHuman: I succeed on step 2.\nHuman: I finish the task!"})
-    summary.dialogue.append({'role': 'user', 'content': "A successful plan to obtain item_frame is below and in the end my inventory has 8 planks, 1 crafting_table, 1 item_frame.\ndef obtain_item_frame(inventory = {}):\n    mine({'log':4}, null); # action 1: mine 4 log without tool\n    craft({'planks':16}, {'log':4}, null); # action 2: craft 16 planks from 4 log\n    craft({'stick':8}, {'planks':4}, null); # action 3: craft 8 stick from 4 planks first\n    mine({'leather':1}, null); # action 4: mine 1 leather without tool\n    craft({'crafting_table':1}, {'planks':4}, null); # action 5: craft 1 crafting_table from 4 planks\n    craft({'item_frame':1}, {'stick':8, 'leather':1}, 'crafting_table'); # action 6: craft 1 item_frame from 8 stick and 1 leather, on crafting_table\n    return 'item_frame'"})
+    # summary.dialogue.append({'role': 'user', 'content': "A successful plan to obtain item_frame is below and in the end my inventory has 8 planks, 1 crafting_table, 1 item_frame.\ndef obtain_item_frame(inventory = {}):\n    mine({'log':4}, null); # action 1: mine 4 log without tool\n    craft({'planks':16}, {'log':4}, null); # action 2: craft 16 planks from 4 log\n    craft({'stick':8}, {'planks':4}, null); # action 3: craft 8 stick from 4 planks first\n    mine({'leather':1}, null); # action 4: mine 1 leather without tool\n    craft({'crafting_table':1}, {'planks':4}, null); # action 5: craft 1 crafting_table from 4 planks\n    craft({'item_frame':1}, {'stick':8, 'leather':1}, 'crafting_table'); # action 6: craft 1 item_frame from 8 stick and 1 leather, on crafting_table\n    return 'item_frame'"})
+    summary.dialogue.append({'role': 'user', 'content': "A successful plan to obtain wooden_pickaxe is below and in the end my inventory has 2 planks, 4 stick, 1 leather.\ndef obtain_wooden_pickaxe(inventory = {}):\n    mine({'log':2}, null); # action 1: mine 1 log without tool\n    craft({'planks':8}, {'log':2}, null); # action 2: mine 1 leather without tool\n    craft({'stick':4}, {'planks':2}, null); # action 4: craft 4 stick from 2 plank\n    mine({'log':1}, null); # action 1: mine 1 log without tool\n    craft({'planks':4}, {'log':1}, null); # action 2: mine 1 leather without tool\n    craft({'wooden_pickaxe':1, {'planks':3, 'stick':2}, crafting_table);\n    return 'wooden_pickaxe'"})
+
     """def obtain_stone(inventory = {}):
         mine({'log':3}, null); # action 1: mine 3 log without tool
         craft({'planks':12}, {'log':3}, null); # action 2: craft 12 planks from 3 log

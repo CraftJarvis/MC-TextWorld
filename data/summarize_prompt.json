@@ -26,5 +26,13 @@
     {
         "role": "assistant",
         "content": "1. Action 2: the original plan involve mining 1 leather which is not required in the rest of plan.\nThe optimiezed plan is below:\ndef obtain_stick(inventory = {}):\n    mine({'log':1}, null); # action 1: mine 1 log without tool\n    craft({'planks':4}, {'log':1}, null); # action 2: craft 4 planks from 1 log\n    craft({'stick':4}, {'planks':2}, null); # action 3: craft 4 stick from 2 plank\n    return 'stick'"
+    },
+    {
+        "role": "user",
+        "content": "A successful plan to obtain wooden_pickaxe is below and in the end my inventory has 3 planks, 2 stick, 1 crafting_table, 1 wooden_pickaxe.\ndef obtain_wooden_pickaxe(inventory = {}):\n    mine({'log':2}, null); # action 1: mine 2 log without tool\n    mine({'log':1}, null); # action 2: mine 1 log without tool\n    craft({'planks':12}, {'log':3}, null); # action 3: craft 12 planks from 3 log without tool\n    craft({'stick':4}, {'planks':2}, null); # action 4: craft 4 stick from 2 plank without tool\n    craft({'crafting_table':1, {'planks':4}, null); # action 5: craft 1 crafting_table from 4 planks without tool\n    craft({'wooden_pickaxe':1, {'planks':3, 'stick':2}, crafting_table); # action 6: craft 1 wooden_pickaxe from 3 planks and 2 stick using crafting_table\n    return 'wooden_pickaxe'"
+    },
+    {
+        "role": "assistant",
+        "content": "1. Action 1 and Action 2 can be merged since they are of the same type.\nThe optimized plan is below:\ndef obtain_wooden_pickaxe(inventory = {}):\n    mine({'log':3}, null); # action 1: mine 3 log without tool\n    craft({'planks':12}, {'log':3}, null); # action 2: craft 12 planks from 3 log without tool\n    craft({'stick':4}, {'planks':2}, null); # action 3: craft 4 stick from 2 plank without tool\n    craft({'crafting_table':1, {'planks':4}, null); # action 4: craft 1 crafting_table from 4 planks without tool\n    craft({'wooden_pickaxe':1, {'planks':3, 'stick':2}, crafting_table); # action 5: craft 1 wooden_pickaxe from 3 planks and 2 stick using crafting_table\n    return 'wooden_pickaxe'"
     }
 ]
