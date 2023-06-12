@@ -3,523 +3,4243 @@
         "output": {},
         "type": "no_op",
         "precondition": {},
-        "tool": {}
+        "tool": {},
+        "abbr": "no_op"
     },
     "mine_log": {
-        "output": {"log": 1},
+        "output": {
+            "log": 1
+        },
         "type": "mine",
         "precondition": {},
-        "tool": {}
+        "tool": {},
+        "abbr": "mine_log"
     },
     "mine_wool": {
-        "output": {"wool": 1},
+        "output": {
+            "wool": 1
+        },
         "type": "mine",
         "precondition": {},
-        "tool": {}
+        "tool": {},
+        "abbr": "mine_wool"
     },
     "mine_stone": {
-        "output": {"stone": 1},
+        "output": {
+            "stone": 1
+        },
         "type": "mine",
-        "precondition": {"wooden_pickaxe":1},
-        "tool": {}
+        "precondition": {
+            "wooden_pickaxe": 1
+        },
+        "tool": {},
+        "abbr": "mine_stone"
     },
     "mine_leather": {
-        "output": {"leather": 1},
+        "output": {
+            "leather": 1
+        },
         "type": "mine",
         "precondition": {},
-        "tool": {}
+        "tool": {},
+        "abbr": "mine_leather"
     },
     "mine_cobblestone": {
-        "output": {"cobblestone": 1},
+        "output": {
+            "cobblestone": 1
+        },
         "type": "mine",
         "precondition": {},
-        "tool": {"wooden_pickaxe": 1}
+        "tool": {
+            "wooden_pickaxe": 1
+        },
+        "abbr": "mine_cobblestone"
     },
     "mine_iron_ore": {
-        "output": {"iron_ore": 1},
+        "output": {
+            "iron_ore": 1
+        },
         "type": "mine",
         "precondition": {},
-        "tool": {"stone_pickaxe": 1}
+        "tool": {
+            "stone_pickaxe": 1
+        },
+        "abbr": "mine_iron_ore"
     },
     "mine_coal": {
-        "output": {"coal": 1},
+        "output": {
+            "coal": 1
+        },
         "type": "mine",
         "precondition": {},
-        "tool": {"stone_pickaxe": 1}
+        "tool": {
+            "stone_pickaxe": 1
+        },
+        "abbr": "mine_coal"
     },
-    "mine_diamond": {
-        "output": {"diamond": 1},
-        "type": "mine",
-        "precondition": {},
-        "tool": {"iron_pickaxe": 1}
-    },
-    "smelt_iron_ingot": {
-        "output": {"iron_ingot": 1},
-        "type": "smelt",
-        "precondition": {"iron_ore": 1},
-        "tool": {"furnace": 1}
-    },
-    "smelt_coal": {
-        "output": {"coal": 1},
-        "type": "smelt",
-        "precondition": {"log": 1},
-        "tool": {"furnace": 1}
-    },
-    "smelt_cooked_porkchop": {
-        "output": {"cooked_porkchop": 1},
-        "type": "smelt",
-        "precondition": {"porkchop": 1},
-        "tool": {"furnace": 1}
-    },
-    "smelt_cooked_mutton": {
-        "output": {"cooked_mutton": 1},
-        "type": "smelt",
-        "precondition": {"mutton": 1},
-        "tool": {"furnace": 1}
-    },
-    "smelt_cooked_beef": {
-        "output": {"cooked_beef": 1},
-        "type": "smelt",
-        "precondition": {"beef": 1},
-        "tool": {"furnace": 1}
-    },
-
     "craft_crafting_table": {
-        "output": {"crafting_table": 1},
+        "output": {
+            "crafting_table": 1
+        },
         "type": "craft",
-        "precondition": {"planks": 4},
-        "tool": {}
+        "precondition": {
+            "planks": 4
+        },
+        "tool": {},
+        "abbr": "craft_crafting_table"
     },
     "craft_furnace": {
-        "output": {"furnace": 1},
+        "output": {
+            "furnace": 1
+        },
         "type": "craft",
-        "precondition": {"cobblestone": 8},
-        "tool": {"crafting_table": 1}
+        "precondition": {
+            "cobblestone": 8
+        },
+        "tool": {
+            "crafting_table": 1
+        },
+        "abbr": "craft_furnace"
     },
-
     "craft_planks": {
-        "output": {"planks": 4},
+        "output": {
+            "planks": 4
+        },
         "type": "craft",
-        "precondition": {"log": 1},
-        "tool": {}
+        "precondition": {
+            "log": 1
+        },
+        "tool": {},
+        "abbr": "craft_planks"
     },
     "craft_stick": {
-        "type": "craft", 
-        "precondition": {"planks": 2}, 
-        "output": {"stick": 4}, 
-        "tool": {}
-    }, 
-    "craft_wooden_button": {
-        "type": "craft", 
-        "precondition": {"planks": 1}, 
-        "output": {"wooden_button": 1}, 
-        "tool": {}
-    }, 
-    "craft_wooden_pressure_plate": {
-        "type": "craft", 
-        "precondition": {"planks": 2}, 
-        "output": {"wooden_pressure_plate": 1}, 
-        "tool": {}
-    }, 
-    "craft_chest": {
-        "type": "craft", 
-        "precondition": {"planks": 8}, 
-        "output": {"chest": 1}, 
-        "tool": {"crafting_table": 1}
-    }, 
-    "craft_oak_stairs": {
-        "type": "craft", 
-        "precondition": {"planks": 6}, 
-        "output": {"oak_stairs": 4}, 
-        "tool": {"crafting_table": 1}
-    }, 
-    "craft_sign": {
-        "type": "craft", 
-        "precondition": {"planks": 6, "stick": 1}, 
-        "output": {"sign": 3}, 
-        "tool": {"crafting_table": 1}
-    }, 
-    "craft_fence": {
-        "type": "craft", 
-        "precondition": {"planks": 4, "stick": 2}, 
-        "output": {"fence": 3}, 
-        "tool": {"crafting_table": 1}
-    }, 
-    "craft_fence_gate": {
-        "type": "craft", 
-        "precondition": {"stick": 4, "planks": 2}, 
-        "output": {"fence_gate": 1}, 
-        "tool": {"crafting_table": 1}
-    }, 
-    "craft_boat": {
-        "type": "craft", 
-        "precondition": {"planks": 5}, 
-        "output": {"boat": 1}, 
-        "tool": {"crafting_table": 1}
-    }, 
-    "craft_trapdoor": {
-        "type": "craft", 
-        "precondition": {"planks": 6}, 
-        "output": {"trapdoor": 2}, 
-        "tool": {"crafting_table": 1}}, 
-    "craft_bowl": {
-        "type": "craft", 
-        "precondition": {"planks": 3},
-        "output": {"bowl": 4}, 
-        "tool": {"crafting_table": 1}
-    }, 
-    "craft_stone_stairs": {
-        "type": "craft", 
-        "precondition": {"cobblestone": 6}, 
-        "output": {"stone_stairs": 4}, 
-        "tool": {"crafting_table": 1}
-    }, 
-    "craft_armor_stand": {
-        "type": "craft", 
-        "precondition": {"stick": 6, "stone_slab": 1}, 
-        "output": {"armor_stand": 1}, 
-        "tool": {"crafting_table": 1}
-    }, 
-    "craft_lever": {
-        "type": "craft", 
-        "precondition": {"stick": 1, "cobblestone": 1}, 
-        "output": {"lever": 1}, 
-        "tool": {"crafting_table": 1}
-    }, 
-    "craft_stone_button": {
-        "type": "craft", 
-        "precondition": {"stone": 1}, 
-        "output": {"stone_button": 1}, 
-        "tool": {"crafting_table": 1}
-    }, 
-    "craft_stone_pressure_plate": {
-        "type": "craft", 
-        "precondition": {"stone": 2}, 
-        "output": {"stone_pressure_plate": 1}, 
-        "tool": {}
-    }, 
-    "craft_stone_brick_stairs": {
-        "type": "craft", 
-        "precondition": {"stonebrick": 6},
-        "output": {"stone_brick_stairs": 4}, 
-        "tool": {"crafting_table": 1}
-    }, 
-    "craft_wooden_pickaxe": {
-        "type": "craft", 
-        "precondition": {"planks": 3, "stick": 2},
-        "output": {"wooden_pickaxe": 1}, 
-        "tool": {"crafting_table": 1}
-    }, 
-    "craft_wooden_axe": {
-        "type": "craft", 
-        "precondition": {"planks": 3, "stick": 2}, 
-        "output": {"wooden_axe": 1}, 
-        "tool": {"crafting_table": 1}
-    }, 
-    "craft_wooden_hoe": {
-        "type": "craft", 
-        "precondition": {"planks": 2, "stick": 2}, 
-        "output": {"wooden_hoe": 1}, 
-        "tool": {"crafting_table": 1}
-    }, 
-    "craft_wooden_sword": {
-        "type": "craft", 
-        "precondition": {"planks": 2, "stick": 1}, 
-        "output": {"wooden_sword": 1}, 
-        "tool": {"crafting_table": 1}
-    }, 
-    "craft_wooden_shovel": {
-        "type": "craft", 
-        "precondition": {"planks": 1, "stick": 2}, 
-        "output": {"wooden_shovel": 1}, 
-        "tool": {"crafting_table": 1}
-    }, 
-    "craft_stone_pickaxe": {
-        "type": "craft", 
-        "precondition": {"cobblestone": 3, "stick": 2}, 
-        "output": {"stone_pickaxe": 1}, 
-        "tool": {"crafting_table": 1}
-    }, 
-    "craft_stone_axe": {
-        "type": "craft", 
-        "precondition": {"cobblestone": 3, "stick": 2}, 
-        "output": {"stone_axe": 1}, 
-        "tool": {"crafting_table": 1}
-    }, 
-    "craft_stone_hoe": {
-        "type": "craft", 
-        "precondition": {"cobblestone": 2, "stick": 2}, 
-        "output": {"stone_hoe": 1}, 
-        "tool": {"crafting_table": 1}
-    }, 
-    "craft_stone_shovel": {
-        "type": "craft", 
-        "precondition": {"cobblestone": 1, "stick": 2}, 
-        "output": {"stone_shovel": 1}, 
-        "tool": {"crafting_table": 1}
-    }, 
-    "craft_stone_sword": {
-        "type": "craft", 
-        "precondition": {"cobblestone": 2, "stick": 1}, 
-        "output": {"stone_sword": 1}, 
-        "tool": {"crafting_table": 1}
-    }, 
-    "craft_bucket": {
-        "type": "craft", 
-        "precondition": {"iron_ingot": 3}, 
-        "output": {"bucket": 1}, 
-        "tool": {"crafting_table": 1}
-    }, 
-    "craft_shears": {
-        "type": "craft", 
-        "precondition": {"iron_ingot": 2}, 
-        "output": {"shears": 1}, 
-        "tool": {"crafting_table": 1}
-    }, 
-    "craft_iron_pickaxe": {
-        "type": "craft", 
-        "precondition": {"iron_ingot": 3, "stick": 2}, 
-        "output": {"iron_pickaxe": 1}, 
-        "tool": {"crafting_table": 1}
-    }, 
-    "craft_iron_axe": {
-        "type": "craft", 
-        "precondition": {"iron_ingot": 3, "stick": 2}, 
-        "output": {"iron_axe": 1}, 
-        "tool": {"crafting_table": 1}
-    }, 
-    "craft_iron_hoe": {
-        "type": "craft", 
-        "precondition": {"iron_ingot": 2, "stick": 2}, 
-        "output": {"iron_hoe": 1}, 
-        "tool": {"crafting_table": 1}
-    }, "craft_iron_shovel": {
-        "type": "craft", 
-        "precondition": {"iron_ingot": 1, "stick": 2}, 
-        "output": {"iron_shovel": 1}, 
-        "tool": {"crafting_table": 1}
-    }, 
-    "craft_iron_sword": {
-        "type": "craft", 
-        "precondition": {"iron_ingot": 2, "stick": 1}, 
-        "output": {"iron_sword": 1}, 
-        "tool": {"crafting_table": 1}
-    }, 
-    "craft_leather_boots": {
-        "type": "craft", 
-        "precondition": {"leather": 4}, 
-        "output": {"leather_boots": 1}, 
-        "tool": {"crafting_table": 1}
-    }, 
-    "craft_leather_chestplate": {
-        "type": "craft", 
-        "precondition": {"leather": 8}, 
-        "output": {"leather_chestplate": 1}, 
-        "tool": {"crafting_table": 1}
-    }, 
-    "craft_leather_helmet": {
-        "type": "craft", 
-        "precondition": {"leather": 5}, 
-        "output": {"leather_helmet": 1}, 
-        "tool": {"crafting_table": 1}
-    }, 
-    "craft_leather_leggings": {
-        "type": "craft", 
-        "precondition": {"leather": 7}, 
-        "output": {"leather_leggings": 1}, 
-        "tool": {"crafting_table": 1}
-    }, 
-    "craft_iron_chestplate": {
-        "type": "craft", 
-        "precondition": {"iron_ingot": 8}, 
-        "output": {"iron_chestplate": 1}, 
-        "tool": {"crafting_table": 1}
-    }, 
-    "craft_iron_leggings": {
-        "type": "craft", 
-        "precondition": {"iron_ingot": 7}, 
-        "output": {"iron_leggings": 1}, 
-        "tool": {"crafting_table": 1}
-    }, 
-    "craft_iron_helmet": {
-        "type": "craft", 
-        "precondition": {"iron_ingot": 5}, 
-        "output": {"iron_helmet": 1}, 
-        "tool": {"crafting_table": 1}
-    }, 
-    "craft_iron_boots": {
-        "type": "craft", 
-        "precondition": {"iron_ingot": 4}, 
-        "output": {"iron_boots": 1}, 
-        "tool": {"crafting_table": 1}
-    }, 
-    "craft_shield": {
-        "type": "craft", 
-        "precondition": {"planks": 6, "iron_ingot": 1}, 
-        "output": {"shield": 1}, 
-        "tool": {"crafting_table": 1}
-    }, 
-    "craft_iron_bars": {
-        "type": "craft", 
-        "precondition": {"iron_ingot": 6}, 
-        "output": {"iron_bars": 16}, 
-        "tool": {"crafting_table": 1}
-    }, 
-    "craft_iron_nugget": {
-        "type": "craft", 
-        "precondition": {"iron_ingot": 1}, 
-        "output": {"iron_nugget": 9}, 
-        "tool": {"crafting_table": 1}
-    }, 
-    "craft_minecart": {
-        "type": "craft", 
-        "precondition": {"iron_ingot": 5}, 
-        "output": {"minecart": 1}, 
-        "tool": {"crafting_table": 1}
-    }, 
-    "craft_hopper": {
-        "type": "craft", 
-        "precondition": {"iron_ingot": 5, "chest": 1}, 
-        "output": {"hopper": 1}, 
-        "tool": {"crafting_table": 1}
-    }, 
-    "craft_hopper_minecart": {
-        "type": "craft", 
-        "precondition": {"hopper": 1, "minecart": 1}, 
-        "output": {"hopper_minecart": 1}, 
-        "tool": {"crafting_table": 1}
-    }, 
-    "craft_furnace_minecart": {
-        "type": "craft", 
-        "precondition": {"furnace": 1, "minecart": 1}, 
-        "output": {"furnace_minecart": 1}, 
-        "tool": {"crafting_table": 1}
-    }, 
-    "craft_chest_minecart": {
-        "type": "craft", 
-        "precondition": {"chest": 1, "minecart": 1}, 
-        "output": {"chest_minecart": 1}, 
-        "tool": {"crafting_table": 1}
-    }, 
-    "craft_iron_door": {
-        "type": "craft", 
-        "precondition": {"iron_ingot": 6}, 
-        "output": {"iron_door": 3}, 
-        "tool": {"crafting_table": 1}
-    }, 
-    "craft_iron_trapdoor": {
-        "type": "craft", 
-        "precondition": {"iron_ingot": 4}, 
-        "output": {"iron_trapdoor": 1}, 
-        "tool": {"crafting_table": 1}
-    }, 
-    "craft_tripwire_hook": {
-        "type": "craft", 
-        "precondition": {"iron_ingot": 1, "stick": 1, "planks": 1}, 
-        "output": {"tripwire_hook": 2}, 
-        "tool": {"crafting_table": 1}
-    }, 
-    "craft_heavy_weighted_pressure_plate": {
-        "type": "craft", 
-        "precondition": {"iron_ingot": 2}, 
-        "output": {"heavy_weighted_pressure_plate": 1}, 
-        "tool": {"crafting_table": 1}
-    }, 
-    "craft_rail": {
-        "type": "craft", 
-        "precondition": {"iron_ingot": 6, "stick": 1}, 
-        "output": {"rail": 16}, 
-        "tool": {"crafting_table": 1}
-    }, 
-    "craft_cauldron": {
-        "type": "craft", 
-        "precondition": {"iron_ingot": 7}, 
-        "output": {"cauldron": 1}, 
-        "tool": {"crafting_table": 1}
-    }, 
-    "craft_bed": {
-        "type": "craft", 
-        "precondition": {"wool": 3, "planks": 3}, 
-        "output": {"bed": 1}, 
-        "tool": {"crafting_table": 1}
-    }, 
-    "craft_painting": {
-        "type": "craft", 
-        "precondition": {"stick": 8, "wool": 1}, 
-        "output": {"painting": 1}, 
-        "tool": {"crafting_table": 1}
-    }, 
-    "craft_item_frame": {
-        "type": "craft", 
-        "precondition": {"stick": 8, "leather": 1}, 
-        "output": {"item_frame": 1}, 
-        "tool": {"crafting_table": 1}
-    }, 
-    "craft_iron_block": {
-        "type": "craft", 
-        "precondition": {"iron_ingot": 9}, 
-        "output": {"iron_block": 1}, 
-        "tool": {"crafting_table": 1}
-    }, 
-    "craft_anvil": {
-        "type": "craft", 
-        "precondition": {"iron_block": 3, "iron_ingot": 4}, 
-        "output": {"anvil": 1}, 
-        "tool": {"crafting_table": 1}
-    }, 
-    "craft_diamond_shovel": {
-        "type": "craft", 
-        "precondition": {"diamond": 1, "stick": 2}, 
-        "output": {"diamond_shovel": 1}, 
-        "tool": {"crafting_table": 1}
-    }, 
-    "craft_jukebox": {
-        "type": "craft", 
-        "precondition": {"planks": 8, "diamond": 1}, 
-        "output": {"jukebox": 1}, 
-        "tool": {"crafting_table": 1}
+        "type": "craft",
+        "precondition": {
+            "planks": 2
+        },
+        "output": {
+            "stick": 4
+        },
+        "tool": {},
+        "abbr": "craft_stick"
     },
-
+    "craft_wooden_button": {
+        "type": "craft",
+        "precondition": {
+            "planks": 1
+        },
+        "output": {
+            "wooden_button": 1
+        },
+        "tool": {},
+        "abbr": "craft_wooden_button"
+    },
+    "craft_wooden_pressure_plate": {
+        "type": "craft",
+        "precondition": {
+            "planks": 2
+        },
+        "output": {
+            "wooden_pressure_plate": 1
+        },
+        "tool": {},
+        "abbr": "craft_wooden_pressure_plate"
+    },
+    "craft_chest": {
+        "type": "craft",
+        "precondition": {
+            "planks": 8
+        },
+        "output": {
+            "chest": 1
+        },
+        "tool": {
+            "crafting_table": 1
+        },
+        "abbr": "craft_chest"
+    },
+    "craft_oak_stairs": {
+        "type": "craft",
+        "precondition": {
+            "planks": 6
+        },
+        "output": {
+            "oak_stairs": 4
+        },
+        "tool": {
+            "crafting_table": 1
+        },
+        "abbr": "craft_oak_stairs"
+    },
+    "craft_sign": {
+        "type": "craft",
+        "precondition": {
+            "planks": 6,
+            "stick": 1
+        },
+        "output": {
+            "sign": 3
+        },
+        "tool": {
+            "crafting_table": 1
+        },
+        "abbr": "craft_sign"
+    },
+    "craft_fence": {
+        "type": "craft",
+        "precondition": {
+            "planks": 4,
+            "stick": 2
+        },
+        "output": {
+            "fence": 3
+        },
+        "tool": {
+            "crafting_table": 1
+        },
+        "abbr": "craft_fence"
+    },
+    "craft_fence_gate": {
+        "type": "craft",
+        "precondition": {
+            "stick": 4,
+            "planks": 2
+        },
+        "output": {
+            "fence_gate": 1
+        },
+        "tool": {
+            "crafting_table": 1
+        },
+        "abbr": "craft_fence_gate"
+    },
+    "craft_boat": {
+        "type": "craft",
+        "precondition": {
+            "planks": 5
+        },
+        "output": {
+            "boat": 1
+        },
+        "tool": {
+            "crafting_table": 1
+        },
+        "abbr": "craft_boat"
+    },
+    "craft_trapdoor": {
+        "type": "craft",
+        "precondition": {
+            "planks": 6
+        },
+        "output": {
+            "trapdoor": 2
+        },
+        "tool": {
+            "crafting_table": 1
+        },
+        "abbr": "craft_trapdoor"
+    },
+    "craft_bowl": {
+        "type": "craft",
+        "precondition": {
+            "planks": 3
+        },
+        "output": {
+            "bowl": 4
+        },
+        "tool": {
+            "crafting_table": 1
+        },
+        "abbr": "craft_bowl"
+    },
+    "craft_stone_stairs": {
+        "type": "craft",
+        "precondition": {
+            "cobblestone": 6
+        },
+        "output": {
+            "stone_stairs": 4
+        },
+        "tool": {
+            "crafting_table": 1
+        },
+        "abbr": "craft_stone_stairs"
+    },
+    "craft_armor_stand": {
+        "type": "craft",
+        "precondition": {
+            "stick": 6,
+            "stone_slab": 1
+        },
+        "output": {
+            "armor_stand": 1
+        },
+        "tool": {
+            "crafting_table": 1
+        },
+        "abbr": "craft_armor_stand"
+    },
+    "craft_lever": {
+        "type": "craft",
+        "precondition": {
+            "stick": 1,
+            "cobblestone": 1
+        },
+        "output": {
+            "lever": 1
+        },
+        "tool": {
+            "crafting_table": 1
+        },
+        "abbr": "craft_lever"
+    },
+    "craft_stone_button": {
+        "type": "craft",
+        "precondition": {
+            "stone": 1
+        },
+        "output": {
+            "stone_button": 1
+        },
+        "tool": {
+            "crafting_table": 1
+        },
+        "abbr": "craft_stone_button"
+    },
+    "craft_stone_pressure_plate": {
+        "type": "craft",
+        "precondition": {
+            "stone": 2
+        },
+        "output": {
+            "stone_pressure_plate": 1
+        },
+        "tool": {},
+        "abbr": "craft_stone_pressure_plate"
+    },
+    "craft_stone_brick_stairs": {
+        "type": "craft",
+        "precondition": {
+            "stonebrick": 6
+        },
+        "output": {
+            "stone_brick_stairs": 4
+        },
+        "tool": {
+            "crafting_table": 1
+        },
+        "abbr": "craft_stone_brick_stairs"
+    },
+    "craft_wooden_pickaxe": {
+        "type": "craft",
+        "precondition": {
+            "planks": 3,
+            "stick": 2
+        },
+        "output": {
+            "wooden_pickaxe": 1
+        },
+        "tool": {
+            "crafting_table": 1
+        },
+        "abbr": "craft_wooden_pickaxe"
+    },
+    "craft_wooden_axe": {
+        "type": "craft",
+        "precondition": {
+            "planks": 3,
+            "stick": 2
+        },
+        "output": {
+            "wooden_axe": 1
+        },
+        "tool": {
+            "crafting_table": 1
+        },
+        "abbr": "craft_wooden_axe"
+    },
+    "craft_wooden_hoe": {
+        "type": "craft",
+        "precondition": {
+            "planks": 2,
+            "stick": 2
+        },
+        "output": {
+            "wooden_hoe": 1
+        },
+        "tool": {
+            "crafting_table": 1
+        },
+        "abbr": "craft_wooden_hoe"
+    },
+    "craft_wooden_sword": {
+        "type": "craft",
+        "precondition": {
+            "planks": 2,
+            "stick": 1
+        },
+        "output": {
+            "wooden_sword": 1
+        },
+        "tool": {
+            "crafting_table": 1
+        },
+        "abbr": "craft_wooden_sword"
+    },
+    "craft_wooden_shovel": {
+        "type": "craft",
+        "precondition": {
+            "planks": 1,
+            "stick": 2
+        },
+        "output": {
+            "wooden_shovel": 1
+        },
+        "tool": {
+            "crafting_table": 1
+        },
+        "abbr": "craft_wooden_shovel"
+    },
+    "craft_stone_pickaxe": {
+        "type": "craft",
+        "precondition": {
+            "cobblestone": 3,
+            "stick": 2
+        },
+        "output": {
+            "stone_pickaxe": 1
+        },
+        "tool": {
+            "crafting_table": 1
+        },
+        "abbr": "craft_stone_pickaxe"
+    },
+    "craft_stone_axe": {
+        "type": "craft",
+        "precondition": {
+            "cobblestone": 3,
+            "stick": 2
+        },
+        "output": {
+            "stone_axe": 1
+        },
+        "tool": {
+            "crafting_table": 1
+        },
+        "abbr": "craft_stone_axe"
+    },
+    "craft_stone_hoe": {
+        "type": "craft",
+        "precondition": {
+            "cobblestone": 2,
+            "stick": 2
+        },
+        "output": {
+            "stone_hoe": 1
+        },
+        "tool": {
+            "crafting_table": 1
+        },
+        "abbr": "craft_stone_hoe"
+    },
+    "craft_stone_shovel": {
+        "type": "craft",
+        "precondition": {
+            "cobblestone": 1,
+            "stick": 2
+        },
+        "output": {
+            "stone_shovel": 1
+        },
+        "tool": {
+            "crafting_table": 1
+        },
+        "abbr": "craft_stone_shovel"
+    },
+    "craft_stone_sword": {
+        "type": "craft",
+        "precondition": {
+            "cobblestone": 2,
+            "stick": 1
+        },
+        "output": {
+            "stone_sword": 1
+        },
+        "tool": {
+            "crafting_table": 1
+        },
+        "abbr": "craft_stone_sword"
+    },
+    "craft_bucket": {
+        "type": "craft",
+        "precondition": {
+            "iron_ingot": 3
+        },
+        "output": {
+            "bucket": 1
+        },
+        "tool": {
+            "crafting_table": 1
+        },
+        "abbr": "craft_bucket"
+    },
+    "craft_shears": {
+        "type": "craft",
+        "precondition": {
+            "iron_ingot": 2
+        },
+        "output": {
+            "shears": 1
+        },
+        "tool": {
+            "crafting_table": 1
+        },
+        "abbr": "craft_shears"
+    },
+    "craft_iron_pickaxe": {
+        "type": "craft",
+        "precondition": {
+            "iron_ingot": 3,
+            "stick": 2
+        },
+        "output": {
+            "iron_pickaxe": 1
+        },
+        "tool": {
+            "crafting_table": 1
+        },
+        "abbr": "craft_iron_pickaxe"
+    },
+    "craft_iron_axe": {
+        "type": "craft",
+        "precondition": {
+            "iron_ingot": 3,
+            "stick": 2
+        },
+        "output": {
+            "iron_axe": 1
+        },
+        "tool": {
+            "crafting_table": 1
+        },
+        "abbr": "craft_iron_axe"
+    },
+    "craft_iron_hoe": {
+        "type": "craft",
+        "precondition": {
+            "iron_ingot": 2,
+            "stick": 2
+        },
+        "output": {
+            "iron_hoe": 1
+        },
+        "tool": {
+            "crafting_table": 1
+        },
+        "abbr": "craft_iron_hoe"
+    },
+    "craft_iron_shovel": {
+        "type": "craft",
+        "precondition": {
+            "iron_ingot": 1,
+            "stick": 2
+        },
+        "output": {
+            "iron_shovel": 1
+        },
+        "tool": {
+            "crafting_table": 1
+        },
+        "abbr": "craft_iron_shovel"
+    },
+    "craft_iron_sword": {
+        "type": "craft",
+        "precondition": {
+            "iron_ingot": 2,
+            "stick": 1
+        },
+        "output": {
+            "iron_sword": 1
+        },
+        "tool": {
+            "crafting_table": 1
+        },
+        "abbr": "craft_iron_sword"
+    },
+    "craft_leather_boots": {
+        "type": "craft",
+        "precondition": {
+            "leather": 4
+        },
+        "output": {
+            "leather_boots": 1
+        },
+        "tool": {
+            "crafting_table": 1
+        },
+        "abbr": "craft_leather_boots"
+    },
+    "craft_leather_chestplate": {
+        "type": "craft",
+        "precondition": {
+            "leather": 8
+        },
+        "output": {
+            "leather_chestplate": 1
+        },
+        "tool": {
+            "crafting_table": 1
+        },
+        "abbr": "craft_leather_chestplate"
+    },
+    "craft_leather_helmet": {
+        "type": "craft",
+        "precondition": {
+            "leather": 5
+        },
+        "output": {
+            "leather_helmet": 1
+        },
+        "tool": {
+            "crafting_table": 1
+        },
+        "abbr": "craft_leather_helmet"
+    },
+    "craft_leather_leggings": {
+        "type": "craft",
+        "precondition": {
+            "leather": 7
+        },
+        "output": {
+            "leather_leggings": 1
+        },
+        "tool": {
+            "crafting_table": 1
+        },
+        "abbr": "craft_leather_leggings"
+    },
+    "craft_iron_chestplate": {
+        "type": "craft",
+        "precondition": {
+            "iron_ingot": 8
+        },
+        "output": {
+            "iron_chestplate": 1
+        },
+        "tool": {
+            "crafting_table": 1
+        },
+        "abbr": "craft_iron_chestplate"
+    },
+    "craft_iron_leggings": {
+        "type": "craft",
+        "precondition": {
+            "iron_ingot": 7
+        },
+        "output": {
+            "iron_leggings": 1
+        },
+        "tool": {
+            "crafting_table": 1
+        },
+        "abbr": "craft_iron_leggings"
+    },
+    "craft_iron_helmet": {
+        "type": "craft",
+        "precondition": {
+            "iron_ingot": 5
+        },
+        "output": {
+            "iron_helmet": 1
+        },
+        "tool": {
+            "crafting_table": 1
+        },
+        "abbr": "craft_iron_helmet"
+    },
+    "craft_iron_boots": {
+        "type": "craft",
+        "precondition": {
+            "iron_ingot": 4
+        },
+        "output": {
+            "iron_boots": 1
+        },
+        "tool": {
+            "crafting_table": 1
+        },
+        "abbr": "craft_iron_boots"
+    },
+    "craft_shield": {
+        "type": "craft",
+        "precondition": {
+            "planks": 6,
+            "iron_ingot": 1
+        },
+        "output": {
+            "shield": 1
+        },
+        "tool": {
+            "crafting_table": 1
+        },
+        "abbr": "craft_shield"
+    },
+    "craft_iron_bars": {
+        "type": "craft",
+        "precondition": {
+            "iron_ingot": 6
+        },
+        "output": {
+            "iron_bars": 16
+        },
+        "tool": {
+            "crafting_table": 1
+        },
+        "abbr": "craft_iron_bars"
+    },
+    "craft_iron_nugget": {
+        "type": "craft",
+        "precondition": {
+            "iron_ingot": 1
+        },
+        "output": {
+            "iron_nugget": 9
+        },
+        "tool": {
+            "crafting_table": 1
+        },
+        "abbr": "craft_iron_nugget"
+    },
+    "craft_minecart": {
+        "type": "craft",
+        "precondition": {
+            "iron_ingot": 5
+        },
+        "output": {
+            "minecart": 1
+        },
+        "tool": {
+            "crafting_table": 1
+        },
+        "abbr": "craft_minecart"
+    },
+    "craft_hopper": {
+        "type": "craft",
+        "precondition": {
+            "iron_ingot": 5,
+            "chest": 1
+        },
+        "output": {
+            "hopper": 1
+        },
+        "tool": {
+            "crafting_table": 1
+        },
+        "abbr": "craft_hopper"
+    },
+    "craft_hopper_minecart": {
+        "type": "craft",
+        "precondition": {
+            "hopper": 1,
+            "minecart": 1
+        },
+        "output": {
+            "hopper_minecart": 1
+        },
+        "tool": {
+            "crafting_table": 1
+        },
+        "abbr": "craft_hopper_minecart"
+    },
+    "craft_furnace_minecart": {
+        "type": "craft",
+        "precondition": {
+            "furnace": 1,
+            "minecart": 1
+        },
+        "output": {
+            "furnace_minecart": 1
+        },
+        "tool": {
+            "crafting_table": 1
+        },
+        "abbr": "craft_furnace_minecart"
+    },
+    "craft_chest_minecart": {
+        "type": "craft",
+        "precondition": {
+            "chest": 1,
+            "minecart": 1
+        },
+        "output": {
+            "chest_minecart": 1
+        },
+        "tool": {
+            "crafting_table": 1
+        },
+        "abbr": "craft_chest_minecart"
+    },
+    "craft_iron_door": {
+        "type": "craft",
+        "precondition": {
+            "iron_ingot": 6
+        },
+        "output": {
+            "iron_door": 3
+        },
+        "tool": {
+            "crafting_table": 1
+        },
+        "abbr": "craft_iron_door"
+    },
+    "craft_iron_trapdoor": {
+        "type": "craft",
+        "precondition": {
+            "iron_ingot": 4
+        },
+        "output": {
+            "iron_trapdoor": 1
+        },
+        "tool": {
+            "crafting_table": 1
+        },
+        "abbr": "craft_iron_trapdoor"
+    },
+    "craft_tripwire_hook": {
+        "type": "craft",
+        "precondition": {
+            "iron_ingot": 1,
+            "stick": 1,
+            "planks": 1
+        },
+        "output": {
+            "tripwire_hook": 2
+        },
+        "tool": {
+            "crafting_table": 1
+        },
+        "abbr": "craft_tripwire_hook"
+    },
+    "craft_heavy_weighted_pressure_plate": {
+        "type": "craft",
+        "precondition": {
+            "iron_ingot": 2
+        },
+        "output": {
+            "heavy_weighted_pressure_plate": 1
+        },
+        "tool": {
+            "crafting_table": 1
+        },
+        "abbr": "craft_heavy_weighted_pressure_plate"
+    },
+    "craft_rail": {
+        "type": "craft",
+        "precondition": {
+            "iron_ingot": 6,
+            "stick": 1
+        },
+        "output": {
+            "rail": 16
+        },
+        "tool": {
+            "crafting_table": 1
+        },
+        "abbr": "craft_rail"
+    },
+    "craft_cauldron": {
+        "type": "craft",
+        "precondition": {
+            "iron_ingot": 7
+        },
+        "output": {
+            "cauldron": 1
+        },
+        "tool": {
+            "crafting_table": 1
+        },
+        "abbr": "craft_cauldron"
+    },
+    "craft_bed": {
+        "type": "craft",
+        "precondition": {
+            "wool": 3,
+            "planks": 3
+        },
+        "output": {
+            "bed": 1
+        },
+        "tool": {
+            "crafting_table": 1
+        },
+        "abbr": "craft_bed"
+    },
+    "craft_painting": {
+        "type": "craft",
+        "precondition": {
+            "stick": 8,
+            "wool": 1
+        },
+        "output": {
+            "painting": 1
+        },
+        "tool": {
+            "crafting_table": 1
+        },
+        "abbr": "craft_painting"
+    },
+    "craft_item_frame": {
+        "type": "craft",
+        "precondition": {
+            "stick": 8,
+            "leather": 1
+        },
+        "output": {
+            "item_frame": 1
+        },
+        "tool": {
+            "crafting_table": 1
+        },
+        "abbr": "craft_item_frame"
+    },
+    "craft_iron_block": {
+        "type": "craft",
+        "precondition": {
+            "iron_ingot": 9
+        },
+        "output": {
+            "iron_block": 1
+        },
+        "tool": {
+            "crafting_table": 1
+        },
+        "abbr": "craft_iron_block"
+    },
+    "craft_anvil": {
+        "type": "craft",
+        "precondition": {
+            "iron_block": 3,
+            "iron_ingot": 4
+        },
+        "output": {
+            "anvil": 1
+        },
+        "tool": {
+            "crafting_table": 1
+        },
+        "abbr": "craft_anvil"
+    },
+    "craft_diamond_shovel": {
+        "type": "craft",
+        "precondition": {
+            "diamond": 1,
+            "stick": 2
+        },
+        "output": {
+            "diamond_shovel": 1
+        },
+        "tool": {
+            "crafting_table": 1
+        },
+        "abbr": "craft_diamond_shovel"
+    },
+    "craft_jukebox": {
+        "type": "craft",
+        "precondition": {
+            "planks": 8,
+            "diamond": 1
+        },
+        "output": {
+            "jukebox": 1
+        },
+        "tool": {
+            "crafting_table": 1
+        },
+        "abbr": "craft_jukebox"
+    },
     "craft_wooden_slab": {
-        "type": "craft", 
-        "precondition": {"planks": 3}, 
-        "output": {"wooden_slab": 6}, 
-        "tool": {"crafting_table": 1}
+        "type": "craft",
+        "precondition": {
+            "planks": 3
+        },
+        "output": {
+            "wooden_slab": 6
+        },
+        "tool": {
+            "crafting_table": 1
+        },
+        "abbr": "craft_wooden_slab"
     },
     "craft_stone_slab": {
-        "type": "craft", 
-        "precondition": {"cobblestone": 3}, 
-        "output": {"stone_slab": 6}, 
-        "tool": {"crafting_table": 1}
+        "type": "craft",
+        "precondition": {
+            "cobblestone": 3
+        },
+        "output": {
+            "stone_slab": 6
+        },
+        "tool": {
+            "crafting_table": 1
+        },
+        "abbr": "craft_stone_slab"
     },
     "craft_cobblestone_wall": {
-        "type": "craft", 
-        "precondition": {"cobblestone": 6}, 
-        "output": {"cobblestone_wall": 6}, 
-        "tool": {"crafting_table": 1}
+        "type": "craft",
+        "precondition": {
+            "cobblestone": 6
+        },
+        "output": {
+            "cobblestone_wall": 6
+        },
+        "tool": {
+            "crafting_table": 1
+        },
+        "abbr": "craft_cobblestone_wall"
     },
     "craft_quartz_block": {
-        "type": "craft", 
-        "precondition": {"stone_slab": 2}, 
-        "output": {"quartz_block": 1}, 
-        "tool": {"crafting_table": 1}
+        "type": "craft",
+        "precondition": {
+            "stone_slab": 2
+        },
+        "output": {
+            "quartz_block": 1
+        },
+        "tool": {
+            "crafting_table": 1
+        },
+        "abbr": "craft_quartz_block"
     },
     "craft_stonebrick": {
-        "type": "craft", 
-        "precondition": {"stone": 4}, 
-        "output": {"stonebrick": 4}, 
-        "tool": {"crafting_table": 1}
+        "type": "craft",
+        "precondition": {
+            "stone": 4
+        },
+        "output": {
+            "stonebrick": 4
+        },
+        "tool": {
+            "crafting_table": 1
+        },
+        "abbr": "craft_stonebrick"
     },
     "craft_torch": {
-        "type": "craft", 
-        "precondition": {"coal": 1, "stick": 1}, 
-        "output": {"torch": 4}, 
-        "tool": {"crafting_table": 1}
+        "type": "craft",
+        "precondition": {
+            "coal": 1,
+            "stick": 1
+        },
+        "output": {
+            "torch": 4
+        },
+        "tool": {
+            "crafting_table": 1
+        },
+        "abbr": "craft_torch"
     },
     "craft_carpet": {
-        "type": "craft", 
-        "precondition": {"wool": 2}, 
-        "output": {"carpet": 3}, 
-        "tool": {"crafting_table": 1}
+        "type": "craft",
+        "precondition": {
+            "wool": 2
+        },
+        "output": {
+            "carpet": 3
+        },
+        "tool": {
+            "crafting_table": 1
+        },
+        "abbr": "craft_carpet"
+    },
+    "craft_lapis_block": {
+        "output": {
+            "lapis_block": 1
+        },
+        "type": "craft",
+        "precondition": {
+            "dye": 9
+        },
+        "tool": {
+            "crafting_table": 1
+        },
+        "abbr": "craft_lapis_block"
+    },
+    "craft_coal_block": {
+        "output": {
+            "coal_block": 1
+        },
+        "type": "craft",
+        "precondition": {
+            "coal": 9
+        },
+        "tool": {
+            "crafting_table": 1
+        },
+        "abbr": "craft_coal_block"
+    },
+    "craft_hay_block": {
+        "output": {
+            "hay_block": 1
+        },
+        "type": "craft",
+        "precondition": {
+            "wheat": 9
+        },
+        "tool": {
+            "crafting_table": 1
+        },
+        "abbr": "craft_hay_block"
+    },
+    "craft_gold_ingot": {
+        "output": {
+            "gold_ingot": 1
+        },
+        "type": "craft",
+        "precondition": {
+            "gold_nugget": 9
+        },
+        "tool": {
+            "crafting_table": 1
+        },
+        "abbr": "craft_gold_ingot"
+    },
+    "craft_iron_ingot": {
+        "output": {
+            "iron_ingot": 1
+        },
+        "type": "craft",
+        "precondition": {
+            "iron_nugget": 9
+        },
+        "tool": {
+            "crafting_table": 1
+        },
+        "abbr": "craft_iron_ingot"
+    },
+    "craft_rabbit_stew": {
+        "output": {
+            "rabbit_stew": 1
+        },
+        "type": "craft",
+        "precondition": {
+            "cooked_rabbit": 1,
+            "carrot": 1,
+            "baked_potato": 1,
+            "brown_mushroom": 1,
+            "bowl": 1
+        },
+        "tool": {
+            "crafting_table": 1
+        },
+        "abbr": "craft_rabbit_stew"
+    },
+    "craft_melon_block": {
+        "output": {
+            "melon_block": 1
+        },
+        "type": "craft",
+        "precondition": {
+            "melon": 9
+        },
+        "tool": {
+            "crafting_table": 1
+        },
+        "abbr": "craft_melon_block"
+    },
+    "craft_beetroot_soup": {
+        "output": {
+            "beetroot_soup": 1
+        },
+        "type": "craft",
+        "precondition": {
+            "beetroot": 6,
+            "bowl": 1
+        },
+        "tool": {
+            "crafting_table": 1
+        },
+        "abbr": "craft_beetroot_soup"
+    },
+    "craft_ender_chest": {
+        "output": {
+            "ender_chest": 1
+        },
+        "type": "craft",
+        "precondition": {
+            "obsidian": 8,
+            "ender_eye": 1
+        },
+        "tool": {
+            "crafting_table": 1
+        },
+        "abbr": "craft_ender_chest"
+    },
+    "craft_purpur_stairs": {
+        "output": {
+            "purpur_stairs": 4
+        },
+        "type": "craft",
+        "precondition": {
+            "purpur_block": 6
+        },
+        "tool": {
+            "crafting_table": 1
+        },
+        "abbr": "craft_purpur_stairs"
+    },
+    "craft_nether_wart_block": {
+        "output": {
+            "nether_wart_block": 1
+        },
+        "type": "craft",
+        "precondition": {
+            "nether_wart": 9
+        },
+        "tool": {
+            "crafting_table": 1
+        },
+        "abbr": "craft_nether_wart_block"
+    },
+    "craft_birch_stairs": {
+        "output": {
+            "birch_stairs": 4
+        },
+        "type": "craft",
+        "precondition": {
+            "planks": 6
+        },
+        "tool": {
+            "crafting_table": 1
+        },
+        "abbr": "craft_birch_stairs"
+    },
+    "craft_spruce_stairs": {
+        "output": {
+            "spruce_stairs": 4
+        },
+        "type": "craft",
+        "precondition": {
+            "planks": 6
+        },
+        "tool": {
+            "crafting_table": 1
+        },
+        "abbr": "craft_spruce_stairs"
+    },
+    "craft_jungle_stairs": {
+        "output": {
+            "jungle_stairs": 4
+        },
+        "type": "craft",
+        "precondition": {
+            "planks": 6
+        },
+        "tool": {
+            "crafting_table": 1
+        },
+        "abbr": "craft_jungle_stairs"
+    },
+    "craft_acacia_stairs": {
+        "output": {
+            "acacia_stairs": 4
+        },
+        "type": "craft",
+        "precondition": {
+            "planks": 6
+        },
+        "tool": {
+            "crafting_table": 1
+        },
+        "abbr": "craft_acacia_stairs"
+    },
+    "craft_dark_oak_stairs": {
+        "output": {
+            "dark_oak_stairs": 4
+        },
+        "type": "craft",
+        "precondition": {
+            "planks": 6
+        },
+        "tool": {
+            "crafting_table": 1
+        },
+        "abbr": "craft_dark_oak_stairs"
+    },
+    "craft_brick_stairs": {
+        "output": {
+            "brick_stairs": 4
+        },
+        "type": "craft",
+        "precondition": {
+            "brick_block": 6
+        },
+        "tool": {
+            "crafting_table": 1
+        },
+        "abbr": "craft_brick_stairs"
+    },
+    "craft_nether_brick_stairs": {
+        "output": {
+            "nether_brick_stairs": 4
+        },
+        "type": "craft",
+        "precondition": {
+            "nether_brick": 6
+        },
+        "tool": {
+            "crafting_table": 1
+        },
+        "abbr": "craft_nether_brick_stairs"
+    },
+    "craft_sandstone_stairs": {
+        "output": {
+            "sandstone_stairs": 4
+        },
+        "type": "craft",
+        "precondition": {
+            "sandstone": 6
+        },
+        "tool": {
+            "crafting_table": 1
+        },
+        "abbr": "craft_sandstone_stairs"
+    },
+    "craft_red_sandstone_stairs": {
+        "output": {
+            "red_sandstone_stairs": 4
+        },
+        "type": "craft",
+        "precondition": {
+            "red_sandstone": 6
+        },
+        "tool": {
+            "crafting_table": 1
+        },
+        "abbr": "craft_red_sandstone_stairs"
+    },
+    "craft_quartz_stairs": {
+        "output": {
+            "quartz_stairs": 4
+        },
+        "type": "craft",
+        "precondition": {
+            "quartz_block": 6
+        },
+        "tool": {
+            "crafting_table": 1
+        },
+        "abbr": "craft_quartz_stairs"
+    },
+    "craft_golden_carrot": {
+        "output": {
+            "golden_carrot": 1
+        },
+        "type": "craft",
+        "precondition": {
+            "gold_nugget": 8,
+            "carrot": 1
+        },
+        "tool": {
+            "crafting_table": 1
+        },
+        "abbr": "craft_golden_carrot"
+    },
+    "craft_speckled_melon": {
+        "output": {
+            "speckled_melon": 1
+        },
+        "type": "craft",
+        "precondition": {
+            "gold_nugget": 8,
+            "melon": 1
+        },
+        "tool": {
+            "crafting_table": 1
+        },
+        "abbr": "craft_speckled_melon"
+    },
+    "craft_end_crystal": {
+        "output": {
+            "end_crystal": 1
+        },
+        "type": "craft",
+        "precondition": {
+            "glass": 7,
+            "ender_eye": 1,
+            "ghast_tear": 1
+        },
+        "tool": {
+            "crafting_table": 1
+        },
+        "abbr": "craft_end_crystal"
+    },
+    "craft_bone_block": {
+        "output": {
+            "bone_block": 1
+        },
+        "type": "craft",
+        "precondition": {
+            "dye": 9
+        },
+        "tool": {
+            "crafting_table": 1
+        },
+        "abbr": "craft_bone_block"
+    },
+    "craft_diamond_pickaxe": {
+        "output": {
+            "diamond_pickaxe": 1
+        },
+        "type": "craft",
+        "precondition": {
+            "diamond": 3,
+            "stick": 2
+        },
+        "tool": {
+            "crafting_table": 1
+        },
+        "abbr": "craft_diamond_pickaxe"
+    },
+    "craft_golden_pickaxe": {
+        "output": {
+            "golden_pickaxe": 1
+        },
+        "type": "craft",
+        "precondition": {
+            "gold_ingot": 3,
+            "stick": 2
+        },
+        "tool": {
+            "crafting_table": 1
+        },
+        "abbr": "craft_golden_pickaxe"
+    },
+    "craft_bow": {
+        "output": {
+            "bow": 1
+        },
+        "type": "craft",
+        "precondition": {
+            "stick": 3,
+            "string": 3
+        },
+        "tool": {
+            "crafting_table": 1
+        },
+        "abbr": "craft_bow"
+    },
+    "craft_spectral_arrow": {
+        "output": {
+            "spectral_arrow": 2
+        },
+        "type": "craft",
+        "precondition": {
+            "glowstone_dust": 4,
+            "arrow": 1
+        },
+        "tool": {
+            "crafting_table": 1
+        },
+        "abbr": "craft_spectral_arrow"
+    },
+    "craft_gold_block": {
+        "output": {
+            "gold_block": 1
+        },
+        "type": "craft",
+        "precondition": {
+            "gold_ingot": 9
+        },
+        "tool": {
+            "crafting_table": 1
+        },
+        "abbr": "craft_gold_block"
+    },
+    "craft_diamond_block": {
+        "output": {
+            "diamond_block": 1
+        },
+        "type": "craft",
+        "precondition": {
+            "diamond": 9
+        },
+        "tool": {
+            "crafting_table": 1
+        },
+        "abbr": "craft_diamond_block"
+    },
+    "craft_emerald_block": {
+        "output": {
+            "emerald_block": 1
+        },
+        "type": "craft",
+        "precondition": {
+            "emerald": 9
+        },
+        "tool": {
+            "crafting_table": 1
+        },
+        "abbr": "craft_emerald_block"
+    },
+    "craft_redstone_block": {
+        "output": {
+            "redstone_block": 1
+        },
+        "type": "craft",
+        "precondition": {
+            "redstone": 9
+        },
+        "tool": {
+            "crafting_table": 1
+        },
+        "abbr": "craft_redstone_block"
+    },
+    "craft_slime": {
+        "output": {
+            "slime": 1
+        },
+        "type": "craft",
+        "precondition": {
+            "slime_ball": 9
+        },
+        "tool": {
+            "crafting_table": 1
+        },
+        "abbr": "craft_slime"
+    },
+    "craft_redstone_lamp": {
+        "output": {
+            "redstone_lamp": 1
+        },
+        "type": "craft",
+        "precondition": {
+            "redstone": 4,
+            "glowstone": 1
+        },
+        "tool": {
+            "crafting_table": 1
+        },
+        "abbr": "craft_redstone_lamp"
+    },
+    "craft_beacon": {
+        "output": {
+            "beacon": 1
+        },
+        "type": "craft",
+        "precondition": {
+            "glass": 5,
+            "nether_star": 1,
+            "obsidian": 3
+        },
+        "tool": {
+            "crafting_table": 1
+        },
+        "abbr": "craft_beacon"
+    },
+    "craft_sea_lantern": {
+        "output": {
+            "sea_lantern": 1
+        },
+        "type": "craft",
+        "precondition": {
+            "prismarine_shard": 4,
+            "prismarine_crystals": 5
+        },
+        "tool": {
+            "crafting_table": 1
+        },
+        "abbr": "craft_sea_lantern"
+    },
+    "craft_diamond_chestplate": {
+        "output": {
+            "diamond_chestplate": 1
+        },
+        "type": "craft",
+        "precondition": {
+            "diamond": 8
+        },
+        "tool": {
+            "crafting_table": 1
+        },
+        "abbr": "craft_diamond_chestplate"
+    },
+    "craft_diamond_leggings": {
+        "output": {
+            "diamond_leggings": 1
+        },
+        "type": "craft",
+        "precondition": {
+            "diamond": 7
+        },
+        "tool": {
+            "crafting_table": 1
+        },
+        "abbr": "craft_diamond_leggings"
+    },
+    "craft_golden_chestplate": {
+        "output": {
+            "golden_chestplate": 1
+        },
+        "type": "craft",
+        "precondition": {
+            "gold_ingot": 8
+        },
+        "tool": {
+            "crafting_table": 1
+        },
+        "abbr": "craft_golden_chestplate"
+    },
+    "craft_golden_leggings": {
+        "output": {
+            "golden_leggings": 1
+        },
+        "type": "craft",
+        "precondition": {
+            "gold_ingot": 7
+        },
+        "tool": {
+            "crafting_table": 1
+        },
+        "abbr": "craft_golden_leggings"
+    },
+    "craft_stained_hardened_clay": {
+        "output": {
+            "stained_hardened_clay": 8
+        },
+        "type": "craft",
+        "precondition": {
+            "hardened_clay": 8,
+            "dye": 1
+        },
+        "tool": {
+            "crafting_table": 1
+        },
+        "abbr": "craft_stained_hardened_clay"
+    },
+    "craft_stained_glass": {
+        "output": {
+            "stained_glass": 8
+        },
+        "type": "craft",
+        "precondition": {
+            "glass": 8,
+            "dye": 1
+        },
+        "tool": {
+            "crafting_table": 1
+        },
+        "abbr": "craft_stained_glass"
+    },
+    "craft_banner": {
+        "output": {
+            "banner": 1
+        },
+        "type": "craft",
+        "precondition": {
+            "wool": 6,
+            "stick": 1
+        },
+        "tool": {
+            "crafting_table": 1
+        },
+        "abbr": "craft_banner"
+    },
+    "craft_lead": {
+        "output": {
+            "lead": 2
+        },
+        "type": "craft",
+        "precondition": {
+            "string": 4,
+            "slime_ball": 1
+        },
+        "tool": {
+            "crafting_table": 1
+        },
+        "abbr": "craft_lead"
+    },
+    "craft_noteblock": {
+        "output": {
+            "noteblock": 1
+        },
+        "type": "craft",
+        "precondition": {
+            "planks": 8,
+            "redstone": 1
+        },
+        "tool": {
+            "crafting_table": 1
+        },
+        "abbr": "craft_noteblock"
+    },
+    "craft_bookshelf": {
+        "output": {
+            "bookshelf": 1
+        },
+        "type": "craft",
+        "precondition": {
+            "planks": 6,
+            "book": 3
+        },
+        "tool": {
+            "crafting_table": 1
+        },
+        "abbr": "craft_bookshelf"
+    },
+    "craft_tnt": {
+        "output": {
+            "tnt": 1
+        },
+        "type": "craft",
+        "precondition": {
+            "gunpowder": 5,
+            "sand": 4
+        },
+        "tool": {
+            "crafting_table": 1
+        },
+        "abbr": "craft_tnt"
+    },
+    "craft_ladder": {
+        "output": {
+            "ladder": 3
+        },
+        "type": "craft",
+        "precondition": {
+            "stick": 7
+        },
+        "tool": {
+            "crafting_table": 1
+        },
+        "abbr": "craft_ladder"
+    },
+    "craft_cake": {
+        "output": {
+            "cake": 1
+        },
+        "type": "craft",
+        "precondition": {
+            "milk_bucket": 3,
+            "sugar": 2,
+            "egg": 1,
+            "wheat": 3
+        },
+        "tool": {
+            "crafting_table": 1
+        },
+        "abbr": "craft_cake"
+    },
+    "craft_golden_rail": {
+        "output": {
+            "golden_rail": 6
+        },
+        "type": "craft",
+        "precondition": {
+            "gold_ingot": 6,
+            "stick": 1,
+            "redstone": 1
+        },
+        "tool": {
+            "crafting_table": 1
+        },
+        "abbr": "craft_golden_rail"
+    },
+    "craft_activator_rail": {
+        "output": {
+            "activator_rail": 6
+        },
+        "type": "craft",
+        "precondition": {
+            "iron_ingot": 6,
+            "stick": 2,
+            "redstone_torch": 1
+        },
+        "tool": {
+            "crafting_table": 1
+        },
+        "abbr": "craft_activator_rail"
+    },
+    "craft_detector_rail": {
+        "output": {
+            "detector_rail": 6
+        },
+        "type": "craft",
+        "precondition": {
+            "iron_ingot": 6,
+            "stone_pressure_plate": 1,
+            "redstone": 1
+        },
+        "tool": {
+            "crafting_table": 1
+        },
+        "abbr": "craft_detector_rail"
+    },
+    "craft_fishing_rod": {
+        "output": {
+            "fishing_rod": 1
+        },
+        "type": "craft",
+        "precondition": {
+            "stick": 3,
+            "string": 2
+        },
+        "tool": {
+            "crafting_table": 1
+        },
+        "abbr": "craft_fishing_rod"
+    },
+    "craft_golden_apple": {
+        "output": {
+            "golden_apple": 1
+        },
+        "type": "craft",
+        "precondition": {
+            "gold_ingot": 8,
+            "apple": 1
+        },
+        "tool": {
+            "crafting_table": 1
+        },
+        "abbr": "craft_golden_apple"
+    },
+    "craft_comparator": {
+        "output": {
+            "comparator": 1
+        },
+        "type": "craft",
+        "precondition": {
+            "redstone_torch": 3,
+            "quartz": 1,
+            "stone": 3
+        },
+        "tool": {
+            "crafting_table": 1
+        },
+        "abbr": "craft_comparator"
+    },
+    "craft_clock": {
+        "output": {
+            "clock": 1
+        },
+        "type": "craft",
+        "precondition": {
+            "gold_ingot": 4,
+            "redstone": 1
+        },
+        "tool": {
+            "crafting_table": 1
+        },
+        "abbr": "craft_clock"
+    },
+    "craft_compass": {
+        "output": {
+            "compass": 1
+        },
+        "type": "craft",
+        "precondition": {
+            "iron_ingot": 4,
+            "redstone": 1
+        },
+        "tool": {
+            "crafting_table": 1
+        },
+        "abbr": "craft_compass"
+    },
+    "craft_map": {
+        "output": {
+            "map": 1
+        },
+        "type": "craft",
+        "precondition": {
+            "paper": 8,
+            "compass": 1
+        },
+        "tool": {
+            "crafting_table": 1
+        },
+        "abbr": "craft_map"
+    },
+    "craft_dispenser": {
+        "output": {
+            "dispenser": 1
+        },
+        "type": "craft",
+        "precondition": {
+            "cobblestone": 7,
+            "bow": 1,
+            "redstone": 1
+        },
+        "tool": {
+            "crafting_table": 1
+        },
+        "abbr": "craft_dispenser"
+    },
+    "craft_dropper": {
+        "output": {
+            "dropper": 1
+        },
+        "type": "craft",
+        "precondition": {
+            "cobblestone": 7,
+            "redstone": 1
+        },
+        "tool": {
+            "crafting_table": 1
+        },
+        "abbr": "craft_dropper"
+    },
+    "craft_observer": {
+        "output": {
+            "observer": 1
+        },
+        "type": "craft",
+        "precondition": {
+            "cobblestone": 6,
+            "redstone": 2,
+            "quartz": 1
+        },
+        "tool": {
+            "crafting_table": 1
+        },
+        "abbr": "craft_observer"
+    },
+    "craft_piston": {
+        "output": {
+            "piston": 1
+        },
+        "type": "craft",
+        "precondition": {
+            "planks": 3,
+            "cobblestone": 4,
+            "iron_ingot": 1,
+            "redstone": 1
+        },
+        "tool": {
+            "crafting_table": 1
+        },
+        "abbr": "craft_piston"
+    },
+    "craft_enchanting_table": {
+        "output": {
+            "enchanting_table": 1
+        },
+        "type": "craft",
+        "precondition": {
+            "book": 1,
+            "diamond": 2,
+            "obsidian": 4
+        },
+        "tool": {
+            "crafting_table": 1
+        },
+        "abbr": "craft_enchanting_table"
+    },
+    "craft_daylight_detector": {
+        "output": {
+            "daylight_detector": 1
+        },
+        "type": "craft",
+        "precondition": {
+            "glass": 3,
+            "quartz": 3,
+            "wooden_slab": 3
+        },
+        "tool": {
+            "crafting_table": 1
+        },
+        "abbr": "craft_daylight_detector"
+    },
+    "craft_glass_pane": {
+        "output": {
+            "glass_pane": 16
+        },
+        "type": "craft",
+        "precondition": {
+            "glass": 6
+        },
+        "tool": {
+            "crafting_table": 1
+        },
+        "abbr": "craft_glass_pane"
+    },
+    "craft_spruce_fence": {
+        "output": {
+            "spruce_fence": 3
+        },
+        "type": "craft",
+        "precondition": {
+            "planks": 4,
+            "stick": 2
+        },
+        "tool": {
+            "crafting_table": 1
+        },
+        "abbr": "craft_spruce_fence"
+    },
+    "craft_jungle_fence": {
+        "output": {
+            "jungle_fence": 3
+        },
+        "type": "craft",
+        "precondition": {
+            "planks": 4,
+            "stick": 2
+        },
+        "tool": {
+            "crafting_table": 1
+        },
+        "abbr": "craft_jungle_fence"
+    },
+    "craft_acacia_fence": {
+        "output": {
+            "acacia_fence": 3
+        },
+        "type": "craft",
+        "precondition": {
+            "planks": 4,
+            "stick": 2
+        },
+        "tool": {
+            "crafting_table": 1
+        },
+        "abbr": "craft_acacia_fence"
+    },
+    "craft_dark_oak_fence": {
+        "output": {
+            "dark_oak_fence": 3
+        },
+        "type": "craft",
+        "precondition": {
+            "planks": 4,
+            "stick": 2
+        },
+        "tool": {
+            "crafting_table": 1
+        },
+        "abbr": "craft_dark_oak_fence"
+    },
+    "craft_nether_brick_fence": {
+        "output": {
+            "nether_brick_fence": 6
+        },
+        "type": "craft",
+        "precondition": {
+            "nether_brick": 6
+        },
+        "tool": {
+            "crafting_table": 1
+        },
+        "abbr": "craft_nether_brick_fence"
+    },
+    "craft_birch_fence_gate": {
+        "output": {
+            "birch_fence_gate": 1
+        },
+        "type": "craft",
+        "precondition": {
+            "stick": 4,
+            "planks": 2
+        },
+        "tool": {
+            "crafting_table": 1
+        },
+        "abbr": "craft_birch_fence_gate"
+    },
+    "craft_spruce_fence_gate": {
+        "output": {
+            "spruce_fence_gate": 1
+        },
+        "type": "craft",
+        "precondition": {
+            "stick": 4,
+            "planks": 2
+        },
+        "tool": {
+            "crafting_table": 1
+        },
+        "abbr": "craft_spruce_fence_gate"
+    },
+    "craft_jungle_fence_gate": {
+        "output": {
+            "jungle_fence_gate": 1
+        },
+        "type": "craft",
+        "precondition": {
+            "stick": 4,
+            "planks": 2
+        },
+        "tool": {
+            "crafting_table": 1
+        },
+        "abbr": "craft_jungle_fence_gate"
+    },
+    "craft_acacia_fence_gate": {
+        "output": {
+            "acacia_fence_gate": 1
+        },
+        "type": "craft",
+        "precondition": {
+            "stick": 4,
+            "planks": 2
+        },
+        "tool": {
+            "crafting_table": 1
+        },
+        "abbr": "craft_acacia_fence_gate"
+    },
+    "craft_dark_oak_fence_gate": {
+        "output": {
+            "dark_oak_fence_gate": 1
+        },
+        "type": "craft",
+        "precondition": {
+            "stick": 4,
+            "planks": 2
+        },
+        "tool": {
+            "crafting_table": 1
+        },
+        "abbr": "craft_dark_oak_fence_gate"
+    },
+    "craft_wooden_door": {
+        "output": {
+            "wooden_door": 3
+        },
+        "type": "craft",
+        "precondition": {
+            "planks": 6
+        },
+        "tool": {
+            "crafting_table": 1
+        },
+        "abbr": "craft_wooden_door"
+    },
+    "craft_spruce_door": {
+        "output": {
+            "spruce_door": 3
+        },
+        "type": "craft",
+        "precondition": {
+            "planks": 6
+        },
+        "tool": {
+            "crafting_table": 1
+        },
+        "abbr": "craft_spruce_door"
+    },
+    "craft_birch_door": {
+        "output": {
+            "birch_door": 3
+        },
+        "type": "craft",
+        "precondition": {
+            "planks": 6
+        },
+        "tool": {
+            "crafting_table": 1
+        },
+        "abbr": "craft_birch_door"
+    },
+    "craft_jungle_door": {
+        "output": {
+            "jungle_door": 3
+        },
+        "type": "craft",
+        "precondition": {
+            "planks": 6
+        },
+        "tool": {
+            "crafting_table": 1
+        },
+        "abbr": "craft_jungle_door"
+    },
+    "craft_acacia_door": {
+        "output": {
+            "acacia_door": 3
+        },
+        "type": "craft",
+        "precondition": {
+            "planks": 6
+        },
+        "tool": {
+            "crafting_table": 1
+        },
+        "abbr": "craft_acacia_door"
+    },
+    "craft_dark_oak_door": {
+        "output": {
+            "dark_oak_door": 3
+        },
+        "type": "craft",
+        "precondition": {
+            "planks": 6
+        },
+        "tool": {
+            "crafting_table": 1
+        },
+        "abbr": "craft_dark_oak_door"
+    },
+    "craft_glass_bottle": {
+        "output": {
+            "glass_bottle": 3
+        },
+        "type": "craft",
+        "precondition": {
+            "glass": 3
+        },
+        "tool": {
+            "crafting_table": 1
+        },
+        "abbr": "craft_glass_bottle"
+    },
+    "craft_spruce_boat": {
+        "output": {
+            "spruce_boat": 1
+        },
+        "type": "craft",
+        "precondition": {
+            "planks": 5
+        },
+        "tool": {
+            "crafting_table": 1
+        },
+        "abbr": "craft_spruce_boat"
+    },
+    "craft_birch_boat": {
+        "output": {
+            "birch_boat": 1
+        },
+        "type": "craft",
+        "precondition": {
+            "planks": 5
+        },
+        "tool": {
+            "crafting_table": 1
+        },
+        "abbr": "craft_birch_boat"
+    },
+    "craft_jungle_boat": {
+        "output": {
+            "jungle_boat": 1
+        },
+        "type": "craft",
+        "precondition": {
+            "planks": 5
+        },
+        "tool": {
+            "crafting_table": 1
+        },
+        "abbr": "craft_jungle_boat"
+    },
+    "craft_acacia_boat": {
+        "output": {
+            "acacia_boat": 1
+        },
+        "type": "craft",
+        "precondition": {
+            "planks": 5
+        },
+        "tool": {
+            "crafting_table": 1
+        },
+        "abbr": "craft_acacia_boat"
+    },
+    "craft_dark_oak_boat": {
+        "output": {
+            "dark_oak_boat": 1
+        },
+        "type": "craft",
+        "precondition": {
+            "planks": 5
+        },
+        "tool": {
+            "crafting_table": 1
+        },
+        "abbr": "craft_dark_oak_boat"
+    },
+    "craft_flower_pot": {
+        "output": {
+            "flower_pot": 1
+        },
+        "type": "craft",
+        "precondition": {
+            "brick": 3
+        },
+        "tool": {
+            "crafting_table": 1
+        },
+        "abbr": "craft_flower_pot"
+    },
+    "craft_diamond_axe": {
+        "output": {
+            "diamond_axe": 1
+        },
+        "type": "craft",
+        "precondition": {
+            "diamond": 3,
+            "stick": 2
+        },
+        "tool": {
+            "crafting_table": 1
+        },
+        "abbr": "craft_diamond_axe"
+    },
+    "craft_diamond_hoe": {
+        "output": {
+            "diamond_hoe": 1
+        },
+        "type": "craft",
+        "precondition": {
+            "diamond": 2,
+            "stick": 2
+        },
+        "tool": {
+            "crafting_table": 1
+        },
+        "abbr": "craft_diamond_hoe"
+    },
+    "craft_golden_axe": {
+        "output": {
+            "golden_axe": 1
+        },
+        "type": "craft",
+        "precondition": {
+            "gold_ingot": 3,
+            "stick": 2
+        },
+        "tool": {
+            "crafting_table": 1
+        },
+        "abbr": "craft_golden_axe"
+    },
+    "craft_golden_hoe": {
+        "output": {
+            "golden_hoe": 1
+        },
+        "type": "craft",
+        "precondition": {
+            "gold_ingot": 2,
+            "stick": 2
+        },
+        "tool": {
+            "crafting_table": 1
+        },
+        "abbr": "craft_golden_hoe"
+    },
+    "craft_diamond_helmet": {
+        "output": {
+            "diamond_helmet": 1
+        },
+        "type": "craft",
+        "precondition": {
+            "diamond": 5
+        },
+        "tool": {
+            "crafting_table": 1
+        },
+        "abbr": "craft_diamond_helmet"
+    },
+    "craft_diamond_boots": {
+        "output": {
+            "diamond_boots": 1
+        },
+        "type": "craft",
+        "precondition": {
+            "diamond": 4
+        },
+        "tool": {
+            "crafting_table": 1
+        },
+        "abbr": "craft_diamond_boots"
+    },
+    "craft_golden_helmet": {
+        "output": {
+            "golden_helmet": 1
+        },
+        "type": "craft",
+        "precondition": {
+            "gold_ingot": 5
+        },
+        "tool": {
+            "crafting_table": 1
+        },
+        "abbr": "craft_golden_helmet"
+    },
+    "craft_golden_boots": {
+        "output": {
+            "golden_boots": 1
+        },
+        "type": "craft",
+        "precondition": {
+            "gold_ingot": 4
+        },
+        "tool": {
+            "crafting_table": 1
+        },
+        "abbr": "craft_golden_boots"
+    },
+    "craft_stained_glass_pane": {
+        "output": {
+            "stained_glass_pane": 16
+        },
+        "type": "craft",
+        "precondition": {
+            "stained_glass": 6
+        },
+        "tool": {
+            "crafting_table": 1
+        },
+        "abbr": "craft_stained_glass_pane"
+    },
+    "craft_birch_fence": {
+        "output": {
+            "birch_fence": 3
+        },
+        "type": "craft",
+        "precondition": {
+            "planks": 4,
+            "stick": 2
+        },
+        "tool": {
+            "crafting_table": 1
+        },
+        "abbr": "craft_birch_fence"
+    },
+    "craft_brewing_stand": {
+        "output": {
+            "brewing_stand": 1
+        },
+        "type": "craft",
+        "precondition": {
+            "blaze_rod": 1,
+            "cobblestone": 3
+        },
+        "tool": {
+            "crafting_table": 1
+        },
+        "abbr": "craft_brewing_stand"
+    },
+    "craft_repeater": {
+        "output": {
+            "repeater": 1
+        },
+        "type": "craft",
+        "precondition": {
+            "redstone_torch": 2,
+            "redstone": 1,
+            "stone": 3
+        },
+        "tool": {
+            "crafting_table": 1
+        },
+        "abbr": "craft_repeater"
+    },
+    "craft_sandstone": {
+        "output": {
+            "sandstone": 1
+        },
+        "type": "craft",
+        "precondition": {
+            "sand": 4
+        },
+        "tool": {},
+        "abbr": "craft_sandstone"
+    },
+    "craft_red_sandstone": {
+        "output": {
+            "red_sandstone": 1
+        },
+        "type": "craft",
+        "precondition": {
+            "sand": 4
+        },
+        "tool": {},
+        "abbr": "craft_red_sandstone"
+    },
+    "craft_nether_brick": {
+        "output": {
+            "nether_brick": 1
+        },
+        "type": "craft",
+        "precondition": {
+            "netherbrick": 4
+        },
+        "tool": {},
+        "abbr": "craft_nether_brick"
+    },
+    "craft_red_nether_brick": {
+        "output": {
+            "red_nether_brick": 1
+        },
+        "type": "craft",
+        "precondition": {
+            "netherbrick": 2,
+            "nether_wart": 2
+        },
+        "tool": {},
+        "abbr": "craft_red_nether_brick"
+    },
+    "craft_dirt": {
+        "output": {
+            "dirt": 4
+        },
+        "type": "craft",
+        "precondition": {
+            "dirt": 2,
+            "gravel": 2
+        },
+        "tool": {},
+        "abbr": "craft_dirt"
+    },
+    "craft_purpur_block": {
+        "output": {
+            "purpur_block": 4
+        },
+        "type": "craft",
+        "precondition": {
+            "popped_chorus_fruit": 4
+        },
+        "tool": {},
+        "abbr": "craft_purpur_block"
+    },
+    "craft_end_bricks": {
+        "output": {
+            "end_bricks": 4
+        },
+        "type": "craft",
+        "precondition": {
+            "end_stone": 4
+        },
+        "tool": {},
+        "abbr": "craft_end_bricks"
+    },
+    "craft_magma": {
+        "output": {
+            "magma": 1
+        },
+        "type": "craft",
+        "precondition": {
+            "magma_cream": 4
+        },
+        "tool": {},
+        "abbr": "craft_magma"
+    },
+    "craft_snow": {
+        "output": {
+            "snow": 1
+        },
+        "type": "craft",
+        "precondition": {
+            "snowball": 4
+        },
+        "tool": {},
+        "abbr": "craft_snow"
+    },
+    "craft_clay": {
+        "output": {
+            "clay": 1
+        },
+        "type": "craft",
+        "precondition": {
+            "clay_ball": 4
+        },
+        "tool": {},
+        "abbr": "craft_clay"
+    },
+    "craft_brick_block": {
+        "output": {
+            "brick_block": 1
+        },
+        "type": "craft",
+        "precondition": {
+            "brick": 4
+        },
+        "tool": {},
+        "abbr": "craft_brick_block"
+    },
+    "craft_carrot_on_a_stick": {
+        "output": {
+            "carrot_on_a_stick": 1
+        },
+        "type": "craft",
+        "precondition": {
+            "fishing_rod": 1,
+            "carrot": 1
+        },
+        "tool": {},
+        "abbr": "craft_carrot_on_a_stick"
+    },
+    "craft_leather": {
+        "output": {
+            "leather": 1
+        },
+        "type": "craft",
+        "precondition": {
+            "rabbit_hide": 4
+        },
+        "tool": {},
+        "abbr": "craft_leather"
+    },
+    "craft_glowstone": {
+        "output": {
+            "glowstone": 1
+        },
+        "type": "craft",
+        "precondition": {
+            "glowstone_dust": 4
+        },
+        "tool": {},
+        "abbr": "craft_glowstone"
+    },
+    "craft_wool": {
+        "output": {
+            "wool": 1
+        },
+        "type": "craft",
+        "precondition": {
+            "string": 4
+        },
+        "tool": {},
+        "abbr": "craft_wool"
+    },
+    "craft_cookie": {
+        "output": {
+            "cookie": 8
+        },
+        "type": "craft",
+        "precondition": {
+            "wheat": 2,
+            "dye": 1
+        },
+        "tool": {
+            "crafting_table": 1
+        },
+        "abbr": "craft_cookie"
+    },
+    "craft_purple_shulker_box": {
+        "output": {
+            "purple_shulker_box": 1
+        },
+        "type": "craft",
+        "precondition": {
+            "shulker_shell": 2,
+            "chest": 1
+        },
+        "tool": {
+            "crafting_table": 1
+        },
+        "abbr": "craft_purple_shulker_box"
+    },
+    "craft_snow_layer": {
+        "output": {
+            "snow_layer": 6
+        },
+        "type": "craft",
+        "precondition": {
+            "snow": 3
+        },
+        "tool": {
+            "crafting_table": 1
+        },
+        "abbr": "craft_snow_layer"
+    },
+    "craft_bread": {
+        "output": {
+            "bread": 1
+        },
+        "type": "craft",
+        "precondition": {
+            "wheat": 3
+        },
+        "tool": {
+            "crafting_table": 1
+        },
+        "abbr": "craft_bread"
+    },
+    "craft_golden_shovel": {
+        "output": {
+            "golden_shovel": 1
+        },
+        "type": "craft",
+        "precondition": {
+            "gold_ingot": 1,
+            "stick": 2
+        },
+        "tool": {
+            "crafting_table": 1
+        },
+        "abbr": "craft_golden_shovel"
+    },
+    "craft_diamond_sword": {
+        "output": {
+            "diamond_sword": 1
+        },
+        "type": "craft",
+        "precondition": {
+            "diamond": 2,
+            "stick": 1
+        },
+        "tool": {
+            "crafting_table": 1
+        },
+        "abbr": "craft_diamond_sword"
+    },
+    "craft_golden_sword": {
+        "output": {
+            "golden_sword": 1
+        },
+        "type": "craft",
+        "precondition": {
+            "gold_ingot": 2,
+            "stick": 1
+        },
+        "tool": {
+            "crafting_table": 1
+        },
+        "abbr": "craft_golden_sword"
+    },
+    "craft_arrow": {
+        "output": {
+            "arrow": 4
+        },
+        "type": "craft",
+        "precondition": {
+            "flint": 1,
+            "stick": 1,
+            "feather": 1
+        },
+        "tool": {
+            "crafting_table": 1
+        },
+        "abbr": "craft_arrow"
+    },
+    "craft_paper": {
+        "output": {
+            "paper": 3
+        },
+        "type": "craft",
+        "precondition": {
+            "reeds": 3
+        },
+        "tool": {
+            "crafting_table": 1
+        },
+        "abbr": "craft_paper"
+    },
+    "craft_lit_pumpkin": {
+        "output": {
+            "lit_pumpkin": 1
+        },
+        "type": "craft",
+        "precondition": {
+            "pumpkin": 1,
+            "torch": 1
+        },
+        "tool": {},
+        "abbr": "craft_lit_pumpkin"
+    },
+    "craft_tnt_minecart": {
+        "output": {
+            "tnt_minecart": 1
+        },
+        "type": "craft",
+        "precondition": {
+            "tnt": 1,
+            "minecart": 1
+        },
+        "tool": {},
+        "abbr": "craft_tnt_minecart"
+    },
+    "craft_end_rod": {
+        "output": {
+            "end_rod": 4
+        },
+        "type": "craft",
+        "precondition": {
+            "blaze_rod": 1,
+            "popped_chorus_fruit": 1
+        },
+        "tool": {},
+        "abbr": "craft_end_rod"
+    },
+    "craft_redstone_torch": {
+        "output": {
+            "redstone_torch": 1
+        },
+        "type": "craft",
+        "precondition": {
+            "redstone": 1,
+            "stick": 1
+        },
+        "tool": {},
+        "abbr": "craft_redstone_torch"
+    },
+    "craft_light_weighted_pressure_plate": {
+        "output": {
+            "light_weighted_pressure_plate": 1
+        },
+        "type": "craft",
+        "precondition": {
+            "gold_ingot": 2
+        },
+        "tool": {},
+        "abbr": "craft_light_weighted_pressure_plate"
+    },
+    "craft_sticky_piston": {
+        "output": {
+            "sticky_piston": 1
+        },
+        "type": "craft",
+        "precondition": {
+            "slime_ball": 1,
+            "piston": 1
+        },
+        "tool": {},
+        "abbr": "craft_sticky_piston"
+    },
+    "craft_diamond": {
+        "output": {
+            "diamond": 9
+        },
+        "type": "craft",
+        "precondition": {
+            "diamond_block": 1
+        },
+        "tool": {},
+        "abbr": "craft_diamond"
+    },
+    "craft_emerald": {
+        "output": {
+            "emerald": 9
+        },
+        "type": "craft",
+        "precondition": {
+            "emerald_block": 1
+        },
+        "tool": {},
+        "abbr": "craft_emerald"
+    },
+    "craft_dye": {
+        "output": {
+            "dye": 9
+        },
+        "type": "craft",
+        "precondition": {
+            "lapis_block": 1
+        },
+        "tool": {},
+        "abbr": "craft_dye"
+    },
+    "craft_redstone": {
+        "output": {
+            "redstone": 9
+        },
+        "type": "craft",
+        "precondition": {
+            "redstone_block": 1
+        },
+        "tool": {},
+        "abbr": "craft_redstone"
+    },
+    "craft_coal": {
+        "output": {
+            "coal": 9
+        },
+        "type": "craft",
+        "precondition": {
+            "coal_block": 1
+        },
+        "tool": {},
+        "abbr": "craft_coal"
+    },
+    "craft_wheat": {
+        "output": {
+            "wheat": 9
+        },
+        "type": "craft",
+        "precondition": {
+            "hay_block": 1
+        },
+        "tool": {},
+        "abbr": "craft_wheat"
+    },
+    "craft_slime_ball": {
+        "output": {
+            "slime_ball": 9
+        },
+        "type": "craft",
+        "precondition": {
+            "slime": 1
+        },
+        "tool": {},
+        "abbr": "craft_slime_ball"
+    },
+    "craft_melon_seeds": {
+        "output": {
+            "melon_seeds": 1
+        },
+        "type": "craft",
+        "precondition": {
+            "melon": 1
+        },
+        "tool": {},
+        "abbr": "craft_melon_seeds"
+    },
+    "craft_pumpkin_seeds": {
+        "output": {
+            "pumpkin_seeds": 4
+        },
+        "type": "craft",
+        "precondition": {
+            "pumpkin": 1
+        },
+        "tool": {},
+        "abbr": "craft_pumpkin_seeds"
+    },
+    "craft_gold_nugget": {
+        "output": {
+            "gold_nugget": 9
+        },
+        "type": "craft",
+        "precondition": {
+            "gold_ingot": 1
+        },
+        "tool": {},
+        "abbr": "craft_gold_nugget"
+    },
+    "craft_sugar": {
+        "output": {
+            "sugar": 1
+        },
+        "type": "craft",
+        "precondition": {
+            "reeds": 1
+        },
+        "tool": {},
+        "abbr": "craft_sugar"
+    },
+    "craft_book": {
+        "output": {
+            "book": 1
+        },
+        "type": "craft",
+        "precondition": {
+            "paper": 3,
+            "leather": 1
+        },
+        "tool": {},
+        "abbr": "craft_book"
+    },
+    "craft_mushroom_stew": {
+        "output": {
+            "mushroom_stew": 1
+        },
+        "type": "craft",
+        "precondition": {
+            "brown_mushroom": 1,
+            "red_mushroom": 1,
+            "bowl": 1
+        },
+        "tool": {
+            "crafting_table": 1
+        },
+        "abbr": "craft_mushroom_stew"
+    },
+    "craft_fermented_spider_eye": {
+        "output": {
+            "fermented_spider_eye": 1
+        },
+        "type": "craft",
+        "precondition": {
+            "spider_eye": 1,
+            "brown_mushroom": 1,
+            "sugar": 1
+        },
+        "tool": {
+            "crafting_table": 1
+        },
+        "abbr": "craft_fermented_spider_eye"
+    },
+    "craft_pumpkin_pie": {
+        "output": {
+            "pumpkin_pie": 1
+        },
+        "type": "craft",
+        "precondition": {
+            "pumpkin": 1,
+            "sugar": 1,
+            "egg": 1
+        },
+        "tool": {
+            "crafting_table": 1
+        },
+        "abbr": "craft_pumpkin_pie"
+    },
+    "craft_writable_book": {
+        "output": {
+            "writable_book": 1
+        },
+        "type": "craft",
+        "precondition": {
+            "book": 1,
+            "dye": 1,
+            "feather": 1
+        },
+        "tool": {
+            "crafting_table": 1
+        },
+        "abbr": "craft_writable_book"
+    },
+    "craft_fire_charge": {
+        "output": {
+            "fire_charge": 3
+        },
+        "type": "craft",
+        "precondition": {
+            "gunpowder": 1,
+            "blaze_powder": 1,
+            "coal": 1
+        },
+        "tool": {
+            "crafting_table": 1
+        },
+        "abbr": "craft_fire_charge"
+    },
+    "craft_magma_cream": {
+        "output": {
+            "magma_cream": 1
+        },
+        "type": "craft",
+        "precondition": {
+            "blaze_powder": 1,
+            "slime_ball": 1
+        },
+        "tool": {},
+        "abbr": "craft_magma_cream"
+    },
+    "craft_trapped_chest": {
+        "output": {
+            "trapped_chest": 1
+        },
+        "type": "craft",
+        "precondition": {
+            "chest": 1,
+            "tripwire_hook": 1
+        },
+        "tool": {},
+        "abbr": "craft_trapped_chest"
+    },
+    "craft_mossy_cobblestone": {
+        "output": {
+            "mossy_cobblestone": 1
+        },
+        "type": "craft",
+        "precondition": {
+            "cobblestone": 1,
+            "vine": 1
+        },
+        "tool": {},
+        "abbr": "craft_mossy_cobblestone"
+    },
+    "craft_flint_and_steel": {
+        "output": {
+            "flint_and_steel": 1
+        },
+        "type": "craft",
+        "precondition": {
+            "iron_ingot": 1,
+            "flint": 1
+        },
+        "tool": {},
+        "abbr": "craft_flint_and_steel"
+    },
+    "craft_ender_eye": {
+        "output": {
+            "ender_eye": 1
+        },
+        "type": "craft",
+        "precondition": {
+            "ender_pearl": 1,
+            "blaze_powder": 1
+        },
+        "tool": {},
+        "abbr": "craft_ender_eye"
+    },
+    "craft_blaze_powder": {
+        "output": {
+            "blaze_powder": 2
+        },
+        "type": "craft",
+        "precondition": {
+            "blaze_rod": 1
+        },
+        "tool": {},
+        "abbr": "craft_blaze_powder"
+    },
+    "smelt_stone_from_cobblestone": {
+        "abbr": "smelt_stone",
+        "output": {
+            "stone": 1
+        },
+        "type": "smelt",
+        "precondition": {
+            "cobblestone": 1
+        },
+        "tool": {
+            "furnace": 1
+        }
+    },
+    "smelt_iron_nugget_from_iron_pickaxe": {
+        "abbr": "smelt_iron_nugget",
+        "output": {
+            "iron_nugget": 1
+        },
+        "type": "smelt",
+        "precondition": {
+            "iron_pickaxe": 1
+        },
+        "tool": {
+            "furnace": 1
+        }
+    },
+    "smelt_iron_nugget_from_chainmail_chestplate": {
+        "abbr": "smelt_iron_nugget",
+        "output": {
+            "iron_nugget": 1
+        },
+        "type": "smelt",
+        "precondition": {
+            "chainmail_chestplate": 1
+        },
+        "tool": {
+            "furnace": 1
+        }
+    },
+    "smelt_iron_nugget_from_iron_chestplate": {
+        "abbr": "smelt_iron_nugget",
+        "output": {
+            "iron_nugget": 1
+        },
+        "type": "smelt",
+        "precondition": {
+            "iron_chestplate": 1
+        },
+        "tool": {
+            "furnace": 1
+        }
+    },
+    "smelt_coal_from_log": {
+        "abbr": "smelt_coal",
+        "output": {
+            "coal": 1
+        },
+        "type": "smelt",
+        "precondition": {
+            "log": 1
+        },
+        "tool": {
+            "furnace": 1
+        }
+    },
+    "smelt_gold_nugget_from_golden_sword": {
+        "abbr": "smelt_gold_nugget",
+        "output": {
+            "gold_nugget": 1
+        },
+        "type": "smelt",
+        "precondition": {
+            "golden_sword": 1
+        },
+        "tool": {
+            "furnace": 1
+        }
+    },
+    "smelt_gold_nugget_from_golden_chestplate": {
+        "abbr": "smelt_gold_nugget",
+        "output": {
+            "gold_nugget": 1
+        },
+        "type": "smelt",
+        "precondition": {
+            "golden_chestplate": 1
+        },
+        "tool": {
+            "furnace": 1
+        }
+    },
+    "smelt_iron_nugget_from_chainmail_boots": {
+        "abbr": "smelt_iron_nugget",
+        "output": {
+            "iron_nugget": 1
+        },
+        "type": "smelt",
+        "precondition": {
+            "chainmail_boots": 1
+        },
+        "tool": {
+            "furnace": 1
+        }
+    },
+    "smelt_cooked_porkchop_from_porkchop": {
+        "abbr": "smelt_cooked_porkchop",
+        "output": {
+            "cooked_porkchop": 1
+        },
+        "type": "smelt",
+        "precondition": {
+            "porkchop": 1
+        },
+        "tool": {
+            "furnace": 1
+        }
+    },
+    "smelt_dye_from_cactus": {
+        "abbr": "smelt_dye",
+        "output": {
+            "dye": 1
+        },
+        "type": "smelt",
+        "precondition": {
+            "cactus": 1
+        },
+        "tool": {
+            "furnace": 1
+        }
+    },
+    "smelt_diamond_from_diamond_ore": {
+        "abbr": "smelt_diamond",
+        "output": {
+            "diamond": 1
+        },
+        "type": "smelt",
+        "precondition": {
+            "diamond_ore": 1
+        },
+        "tool": {
+            "furnace": 1
+        }
+    },
+    "smelt_cooked_fish_from_fish": {
+        "abbr": "smelt_cooked_fish",
+        "output": {
+            "cooked_fish": 1
+        },
+        "type": "smelt",
+        "precondition": {
+            "fish": 1
+        },
+        "tool": {
+            "furnace": 1
+        }
+    },
+    "smelt_gold_nugget_from_golden_pickaxe": {
+        "abbr": "smelt_gold_nugget",
+        "output": {
+            "gold_nugget": 1
+        },
+        "type": "smelt",
+        "precondition": {
+            "golden_pickaxe": 1
+        },
+        "tool": {
+            "furnace": 1
+        }
+    },
+    "smelt_netherbrick_from_netherrack": {
+        "abbr": "smelt_netherbrick",
+        "output": {
+            "netherbrick": 1
+        },
+        "type": "smelt",
+        "precondition": {
+            "netherrack": 1
+        },
+        "tool": {
+            "furnace": 1
+        }
+    },
+    "smelt_iron_nugget_from_iron_helmet": {
+        "abbr": "smelt_iron_nugget",
+        "output": {
+            "iron_nugget": 1
+        },
+        "type": "smelt",
+        "precondition": {
+            "iron_helmet": 1
+        },
+        "tool": {
+            "furnace": 1
+        }
+    },
+    "smelt_gold_nugget_from_golden_shovel": {
+        "abbr": "smelt_gold_nugget",
+        "output": {
+            "gold_nugget": 1
+        },
+        "type": "smelt",
+        "precondition": {
+            "golden_shovel": 1
+        },
+        "tool": {
+            "furnace": 1
+        }
+    },
+    "smelt_iron_nugget_from_iron_hoe": {
+        "abbr": "smelt_iron_nugget",
+        "output": {
+            "iron_nugget": 1
+        },
+        "type": "smelt",
+        "precondition": {
+            "iron_hoe": 1
+        },
+        "tool": {
+            "furnace": 1
+        }
+    },
+    "smelt_sponge_from_sponge": {
+        "abbr": "smelt_sponge",
+        "output": {
+            "sponge": 1
+        },
+        "type": "smelt",
+        "precondition": {
+            "sponge": 1
+        },
+        "tool": {
+            "furnace": 1
+        }
+    },
+    "smelt_emerald_from_emerald_ore": {
+        "abbr": "smelt_emerald",
+        "output": {
+            "emerald": 1
+        },
+        "type": "smelt",
+        "precondition": {
+            "emerald_ore": 1
+        },
+        "tool": {
+            "furnace": 1
+        }
+    },
+    "smelt_cooked_chicken_from_chicken": {
+        "abbr": "smelt_cooked_chicken",
+        "output": {
+            "cooked_chicken": 1
+        },
+        "type": "smelt",
+        "precondition": {
+            "chicken": 1
+        },
+        "tool": {
+            "furnace": 1
+        }
+    },
+    "smelt_iron_nugget_from_chainmail_helmet": {
+        "abbr": "smelt_iron_nugget",
+        "output": {
+            "iron_nugget": 1
+        },
+        "type": "smelt",
+        "precondition": {
+            "chainmail_helmet": 1
+        },
+        "tool": {
+            "furnace": 1
+        }
+    },
+    "smelt_hardened_clay_from_clay": {
+        "abbr": "smelt_hardened_clay",
+        "output": {
+            "hardened_clay": 1
+        },
+        "type": "smelt",
+        "precondition": {
+            "clay": 1
+        },
+        "tool": {
+            "furnace": 1
+        }
+    },
+    "smelt_gold_ingot_from_gold_ore": {
+        "abbr": "smelt_gold_ingot",
+        "output": {
+            "gold_ingot": 1
+        },
+        "type": "smelt",
+        "precondition": {
+            "gold_ore": 1
+        },
+        "tool": {
+            "furnace": 1
+        }
+    },
+    "smelt_iron_nugget_from_iron_leggings": {
+        "abbr": "smelt_iron_nugget",
+        "output": {
+            "iron_nugget": 1
+        },
+        "type": "smelt",
+        "precondition": {
+            "iron_leggings": 1
+        },
+        "tool": {
+            "furnace": 1
+        }
+    },
+    "smelt_iron_nugget_from_iron_sword": {
+        "abbr": "smelt_iron_nugget",
+        "output": {
+            "iron_nugget": 1
+        },
+        "type": "smelt",
+        "precondition": {
+            "iron_sword": 1
+        },
+        "tool": {
+            "furnace": 1
+        }
+    },
+    "smelt_iron_nugget_from_iron_boots": {
+        "abbr": "smelt_iron_nugget",
+        "output": {
+            "iron_nugget": 1
+        },
+        "type": "smelt",
+        "precondition": {
+            "iron_boots": 1
+        },
+        "tool": {
+            "furnace": 1
+        }
+    },
+    "smelt_gold_nugget_from_golden_hoe": {
+        "abbr": "smelt_gold_nugget",
+        "output": {
+            "gold_nugget": 1
+        },
+        "type": "smelt",
+        "precondition": {
+            "golden_hoe": 1
+        },
+        "tool": {
+            "furnace": 1
+        }
+    },
+    "smelt_quartz_from_quartz_ore": {
+        "abbr": "smelt_quartz",
+        "output": {
+            "quartz": 1
+        },
+        "type": "smelt",
+        "precondition": {
+            "quartz_ore": 1
+        },
+        "tool": {
+            "furnace": 1
+        }
+    },
+    "smelt_glass_from_sand": {
+        "abbr": "smelt_glass",
+        "output": {
+            "glass": 1
+        },
+        "type": "smelt",
+        "precondition": {
+            "sand": 1
+        },
+        "tool": {
+            "furnace": 1
+        }
+    },
+    "smelt_gold_nugget_from_golden_helmet": {
+        "abbr": "smelt_gold_nugget",
+        "output": {
+            "gold_nugget": 1
+        },
+        "type": "smelt",
+        "precondition": {
+            "golden_helmet": 1
+        },
+        "tool": {
+            "furnace": 1
+        }
+    },
+    "smelt_cooked_beef_from_beef": {
+        "abbr": "smelt_cooked_beef",
+        "output": {
+            "cooked_beef": 1
+        },
+        "type": "smelt",
+        "precondition": {
+            "beef": 1
+        },
+        "tool": {
+            "furnace": 1
+        }
+    },
+    "smelt_baked_potato_from_potato": {
+        "abbr": "smelt_baked_potato",
+        "output": {
+            "baked_potato": 1
+        },
+        "type": "smelt",
+        "precondition": {
+            "potato": 1
+        },
+        "tool": {
+            "furnace": 1
+        }
+    },
+    "smelt_brick_from_clay_ball": {
+        "abbr": "smelt_brick",
+        "output": {
+            "brick": 1
+        },
+        "type": "smelt",
+        "precondition": {
+            "clay_ball": 1
+        },
+        "tool": {
+            "furnace": 1
+        }
+    },
+    "smelt_iron_nugget_from_iron_horse_armor": {
+        "abbr": "smelt_iron_nugget",
+        "output": {
+            "iron_nugget": 1
+        },
+        "type": "smelt",
+        "precondition": {
+            "iron_horse_armor": 1
+        },
+        "tool": {
+            "furnace": 1
+        }
+    },
+    "smelt_iron_nugget_from_iron_shovel": {
+        "abbr": "smelt_iron_nugget",
+        "output": {
+            "iron_nugget": 1
+        },
+        "type": "smelt",
+        "precondition": {
+            "iron_shovel": 1
+        },
+        "tool": {
+            "furnace": 1
+        }
+    },
+    "smelt_iron_nugget_from_chainmail_leggings": {
+        "abbr": "smelt_iron_nugget",
+        "output": {
+            "iron_nugget": 1
+        },
+        "type": "smelt",
+        "precondition": {
+            "chainmail_leggings": 1
+        },
+        "tool": {
+            "furnace": 1
+        }
+    },
+    "smelt_gold_nugget_from_golden_leggings": {
+        "abbr": "smelt_gold_nugget",
+        "output": {
+            "gold_nugget": 1
+        },
+        "type": "smelt",
+        "precondition": {
+            "golden_leggings": 1
+        },
+        "tool": {
+            "furnace": 1
+        }
+    },
+    "smelt_stonebrick_from_stonebrick": {
+        "abbr": "smelt_stonebrick",
+        "output": {
+            "stonebrick": 1
+        },
+        "type": "smelt",
+        "precondition": {
+            "stonebrick": 1
+        },
+        "tool": {
+            "furnace": 1
+        }
+    },
+    "smelt_popped_chorus_fruit_from_chorus_fruit": {
+        "abbr": "smelt_popped_chorus_fruit",
+        "output": {
+            "popped_chorus_fruit": 1
+        },
+        "type": "smelt",
+        "precondition": {
+            "chorus_fruit": 1
+        },
+        "tool": {
+            "furnace": 1
+        }
+    },
+    "smelt_gold_nugget_from_golden_axe": {
+        "abbr": "smelt_gold_nugget",
+        "output": {
+            "gold_nugget": 1
+        },
+        "type": "smelt",
+        "precondition": {
+            "golden_axe": 1
+        },
+        "tool": {
+            "furnace": 1
+        }
+    },
+    "smelt_coal_from_coal_ore": {
+        "abbr": "smelt_coal",
+        "output": {
+            "coal": 1
+        },
+        "type": "smelt",
+        "precondition": {
+            "coal_ore": 1
+        },
+        "tool": {
+            "furnace": 1
+        }
+    },
+    "smelt_gold_nugget_from_golden_horse_armor": {
+        "abbr": "smelt_gold_nugget",
+        "output": {
+            "gold_nugget": 1
+        },
+        "type": "smelt",
+        "precondition": {
+            "golden_horse_armor": 1
+        },
+        "tool": {
+            "furnace": 1
+        }
+    },
+    "smelt_cooked_mutton_from_mutton": {
+        "abbr": "smelt_cooked_mutton",
+        "output": {
+            "cooked_mutton": 1
+        },
+        "type": "smelt",
+        "precondition": {
+            "mutton": 1
+        },
+        "tool": {
+            "furnace": 1
+        }
+    },
+    "smelt_gold_nugget_from_golden_boots": {
+        "abbr": "smelt_gold_nugget",
+        "output": {
+            "gold_nugget": 1
+        },
+        "type": "smelt",
+        "precondition": {
+            "golden_boots": 1
+        },
+        "tool": {
+            "furnace": 1
+        }
+    },
+    "smelt_redstone_from_redstone_ore": {
+        "abbr": "smelt_redstone",
+        "output": {
+            "redstone": 1
+        },
+        "type": "smelt",
+        "precondition": {
+            "redstone_ore": 1
+        },
+        "tool": {
+            "furnace": 1
+        }
+    },
+    "smelt_dye_from_lapis_ore": {
+        "abbr": "smelt_dye",
+        "output": {
+            "dye": 1
+        },
+        "type": "smelt",
+        "precondition": {
+            "lapis_ore": 1
+        },
+        "tool": {
+            "furnace": 1
+        }
+    },
+    "smelt_iron_nugget_from_iron_axe": {
+        "abbr": "smelt_iron_nugget",
+        "output": {
+            "iron_nugget": 1
+        },
+        "type": "smelt",
+        "precondition": {
+            "iron_axe": 1
+        },
+        "tool": {
+            "furnace": 1
+        }
+    },
+    "smelt_cooked_rabbit_from_rabbit": {
+        "abbr": "smelt_cooked_rabbit",
+        "output": {
+            "cooked_rabbit": 1
+        },
+        "type": "smelt",
+        "precondition": {
+            "rabbit": 1
+        },
+        "tool": {
+            "furnace": 1
+        }
+    },
+    "smelt_iron_ingot_from_iron_ore": {
+        "abbr": "smelt_iron_ingot",
+        "output": {
+            "iron_ingot": 1
+        },
+        "type": "smelt",
+        "precondition": {
+            "iron_ore": 1
+        },
+        "tool": {
+            "furnace": 1
+        }
+    },
+    "mine_dirt": {
+        "output": {
+            "dirt": 1
+        },
+        "type": "mine",
+        "precondition": {},
+        "tool": {},
+        "abbr": "mine_dirt"
+    },
+    "mine_slime_ball": {
+        "output": {
+            "slime_ball": 1
+        },
+        "type": "mine",
+        "precondition": {},
+        "tool": {},
+        "abbr": "mine_slime_ball"
+    },
+    "mine_sand": {
+        "output": {
+            "sand": 1
+        },
+        "type": "mine",
+        "precondition": {},
+        "tool": {},
+        "abbr": "mine_sand"
+    },
+    "mine_gravel": {
+        "output": {
+            "gravel": 1
+        },
+        "type": "mine",
+        "precondition": {},
+        "tool": {},
+        "abbr": "mine_gravel"
+    },
+    "mine_gold_ore": {
+        "output": {
+            "gold_ore": 1
+        },
+        "type": "mine",
+        "precondition": {},
+        "tool": {"iron_pickaxe": 1},
+        "abbr": "mine_gold_ore"
+    },
+    "mine_carrot": {
+        "output": {
+            "carrot": 1
+        },
+        "type": "mine",
+        "precondition": {},
+        "tool": {},
+        "abbr": "mine_carrot"
+    },
+    "mine_brown_mushroom": {
+        "output": {
+            "brown_mushroom": 1
+        },
+        "type": "mine",
+        "precondition": {},
+        "tool": {},
+        "abbr": "mine_brown_mushroom"
+    },
+    "mine_red_mushroom": {
+        "output": {
+            "red_mushroom": 1
+        },
+        "type": "mine",
+        "precondition": {},
+        "tool": {},
+        "abbr": "mine_red_mushroom"
+    },
+    "mine_nether_wart": {
+        "output": {
+            "nether_wart": 1
+        },
+        "type": "mine",
+        "precondition": {},
+        "tool": {},
+        "abbr": "mine_nether_wart"
+    },
+    "mine_ghast_tear": {
+        "output": {
+            "ghast_tear": 1
+        },
+        "type": "mine",
+        "precondition": {},
+        "tool": {},
+        "abbr": "mine_ghast_tear"
+    },
+    "mine_string": {
+        "output": {
+            "string": 1
+        },
+        "type": "mine",
+        "precondition": {},
+        "tool": {},
+        "abbr": "mine_string"
+    },
+    "mine_glowstone_dust": {
+        "output": {
+            "glowstone_dust": 1
+        },
+        "type": "mine",
+        "precondition": {},
+        "tool": {},
+        "abbr": "mine_glowstone_dust"
+    },
+    "mine_nether_star": {
+        "output": {
+            "nether_star": 1
+        },
+        "type": "mine",
+        "precondition": {},
+        "tool": {},
+        "abbr": "mine_nether_star"
+    },
+    "mine_prismarine_shard": {
+        "output": {
+            "prismarine_shard": 1
+        },
+        "type": "mine",
+        "precondition": {},
+        "tool": {},
+        "abbr": "mine_prismarine_shard"
+    },
+    "mine_prismarine_crystals": {
+        "output": {
+            "prismarine_crystals": 1
+        },
+        "type": "mine",
+        "precondition": {},
+        "tool": {},
+        "abbr": "mine_prismarine_crystals"
+    },
+    "mine_gunpowder": {
+        "output": {
+            "gunpowder": 1
+        },
+        "type": "mine",
+        "precondition": {},
+        "tool": {},
+        "abbr": "mine_gunpowder"
+    },
+    "mine_milk_bucket": {
+        "output": {
+            "milk_bucket": 1
+        },
+        "type": "mine",
+        "precondition": {"bucket": 1},
+        "tool": {},
+        "abbr": "mine_milk_bucket"
+    },
+    "mine_egg": {
+        "output": {
+            "egg": 1
+        },
+        "type": "mine",
+        "precondition": {},
+        "tool": {},
+        "abbr": "mine_egg"
+    },
+    "mine_apple": {
+        "output": {
+            "apple": 1
+        },
+        "type": "mine",
+        "precondition": {},
+        "tool": {},
+        "abbr": "mine_apple"
+    },
+    "mine_blaze_rod": {
+        "output": {
+            "blaze_rod": 1
+        },
+        "type": "mine",
+        "precondition": {},
+        "tool": {},
+        "abbr": "mine_blaze_rod"
+    },
+    "mine_end_stone": {
+        "output": {
+            "end_stone": 1
+        },
+        "type": "mine",
+        "precondition": {},
+        "tool": {"wooden_pickaxe": 1},
+        "abbr": "mine_end_stone"
+    },
+    "mine_snowball": {
+        "output": {
+            "snowball": 1
+        },
+        "type": "mine",
+        "precondition": {},
+        "tool": {},
+        "abbr": "mine_snowball"
+    },
+    "mine_clay_ball": {
+        "output": {
+            "clay_ball": 1
+        },
+        "type": "mine",
+        "precondition": {},
+        "tool": {"wooden_shovel": 1},
+        "abbr": "mine_clay_ball"
+    },
+    "mine_rabbit_hide": {
+        "output": {
+            "rabbit_hide": 1
+        },
+        "type": "mine",
+        "precondition": {},
+        "tool": {},
+        "abbr": "mine_rabbit_hide"
+    },
+    "mine_shulker_shell": {
+        "output": {
+            "shulker_shell": 1
+        },
+        "type": "mine",
+        "precondition": {},
+        "tool": {},
+        "abbr": "mine_shulker_shell"
+    },
+    "mine_flint": {
+        "output": {
+            "flint": 1
+        },
+        "type": "mine",
+        "precondition": {},
+        "tool": {},
+        "abbr": "mine_flint"
+    },
+    "mine_feather": {
+        "output": {
+            "feather": 1
+        },
+        "type": "mine",
+        "precondition": {},
+        "tool": {},
+        "abbr": "mine_feather"
+    },
+    "mine_reeds": {
+        "output": {
+            "reeds": 1
+        },
+        "type": "mine",
+        "precondition": {},
+        "tool": {},
+        "abbr": "mine_reeds"
+    },
+    "mine_purpur_block": {
+        "output": {
+            "purpur_block": 1
+        },
+        "type": "mine",
+        "precondition": {},
+        "tool": {},
+        "abbr": "mine_purpur_block"
+    },
+    "mine_pumpkin": {
+        "output": {
+            "pumpkin": 1
+        },
+        "type": "mine",
+        "precondition": {},
+        "tool": {},
+        "abbr": "mine_pumpkin"
+    },
+    "mine_spider_eye": {
+        "output": {
+            "spider_eye": 1
+        },
+        "type": "mine",
+        "precondition": {},
+        "tool": {},
+        "abbr": "mine_spider_eye"
+    },
+    "mine_vine": {
+        "output": {
+            "vine": 1
+        },
+        "type": "mine",
+        "precondition": {},
+        "tool": {},
+        "abbr": "mine_vine"
+    },
+    "mine_ender_pearl": {
+        "output": {
+            "ender_pearl": 1
+        },
+        "type": "mine",
+        "precondition": {},
+        "tool": {},
+        "abbr": "mine_ender_pearl"
+    },
+    "mine_chainmail_chestplate": {
+        "output": {
+            "chainmail_chestplate": 1
+        },
+        "type": "mine",
+        "precondition": {},
+        "tool": {},
+        "abbr": "mine_chainmail_chestplate"
+    },
+    "mine_chainmail_boots": {
+        "output": {
+            "chainmail_boots": 1
+        },
+        "type": "mine",
+        "precondition": {},
+        "tool": {},
+        "abbr": "mine_chainmail_boots"
+    },
+    "mine_porkchop": {
+        "output": {
+            "porkchop": 1
+        },
+        "type": "mine",
+        "precondition": {},
+        "tool": {},
+        "abbr": "mine_porkchop"
+    },
+    "mine_cactus": {
+        "output": {
+            "cactus": 1
+        },
+        "type": "mine",
+        "precondition": {},
+        "tool": {},
+        "abbr": "mine_cactus"
+    },
+    "mine_diamond_ore": {
+        "output": {
+            "diamond_ore": 1
+        },
+        "type": "mine",
+        "precondition": {},
+        "tool": {"iron_pickaxe": 1},
+        "abbr": "mine_diamond_ore"
+    },
+    "mine_fish": {
+        "output": {
+            "fish": 1
+        },
+        "type": "mine",
+        "precondition": {},
+        "tool": {"fishing_rod": 1},
+        "abbr": "mine_fish"
+    },
+    "mine_netherrack": {
+        "output": {
+            "netherrack": 1
+        },
+        "type": "mine",
+        "precondition": {},
+        "tool": {"wooden_pickaxe": 1},
+        "abbr": "mine_netherrack"
+    },
+    "mine_emerald": {
+        "output": {
+            "emerald": 1
+        },
+        "type": "mine",
+        "precondition": {},
+        "tool": {"iron_pickaxe": 1},
+        "abbr": "mine_emerald"
+    },
+    "mine_chicken": {
+        "output": {
+            "chicken": 1
+        },
+        "type": "mine",
+        "precondition": {},
+        "tool": {},
+        "abbr": "mine_chicken"
+    },
+    "mine_chainmail_helmet": {
+        "output": {
+            "chainmail_helmet": 1
+        },
+        "type": "mine",
+        "precondition": {},
+        "tool": {},
+        "abbr": "mine_chainmail_helmet"
+    },
+    "mine_quartz_ore": {
+        "output": {
+            "quartz_ore": 1
+        },
+        "type": "mine",
+        "precondition": {},
+        "tool": {"wooden_pickaxe": 1},
+        "abbr": "mine_quartz_ore"
+    },
+    "mine_beef": {
+        "output": {
+            "beef": 1
+        },
+        "type": "mine",
+        "precondition": {},
+        "tool": {},
+        "abbr": "mine_beef"
+    },
+    "mine_potato": {
+        "output": {
+            "potato": 1
+        },
+        "type": "mine",
+        "precondition": {},
+        "tool": {},
+        "abbr": "mine_potato"
+    },
+    "mine_iron_horse_armor": {
+        "output": {
+            "iron_horse_armor": 1
+        },
+        "type": "mine",
+        "precondition": {},
+        "tool": {},
+        "abbr": "mine_iron_horse_armor"
+    },
+    "mine_chainmail_leggings": {
+        "output": {
+            "chainmail_leggings": 1
+        },
+        "type": "mine",
+        "precondition": {},
+        "tool": {},
+        "abbr": "mine_chainmail_leggings"
+    },
+    "mine_chorus_fruit": {
+        "output": {
+            "chorus_fruit": 1
+        },
+        "type": "mine",
+        "precondition": {},
+        "tool": {},
+        "abbr": "mine_chorus_fruit"
+    },
+    "mine_golden_horse_armor": {
+        "output": {
+            "golden_horse_armor": 1
+        },
+        "type": "mine",
+        "precondition": {},
+        "tool": {},
+        "abbr": "mine_golden_horse_armor"
+    },
+    "mine_mutton": {
+        "output": {
+            "mutton": 1
+        },
+        "type": "mine",
+        "precondition": {},
+        "tool": {},
+        "abbr": "mine_mutton"
+    },
+    "mine_redstone": {
+        "output": {
+            "redstone": 1
+        },
+        "type": "mine",
+        "precondition": {},
+        "tool": {},
+        "abbr": "mine_redstone"
+    },
+    "mine_lapis": {
+        "output": {
+            "lapis": 1
+        },
+        "type": "mine",
+        "precondition": {},
+        "tool": {"stone_pickaxe": 1},
+        "abbr": "mine_lapis"
+    },
+    "mine_rabbit": {
+        "output": {
+            "rabbit": 1
+        },
+        "type": "mine",
+        "precondition": {},
+        "tool": {},
+        "abbr": "mine_rabbit"
+    },
+    "mine_sponge": {
+        "output": {
+            "sponge": 1
+        },
+        "type": "mine",
+        "precondition": {},
+        "tool": {},
+        "abbr": "mine_sponge"
+    },
+    "mine_hay_block": {
+        "output": {
+            "hay_block": 1
+        },
+        "type": "mine",
+        "precondition": {},
+        "tool": {},
+        "abbr": "mine_hay_block"
+    },
+    "mine_melon": {
+        "output": {
+            "melon": 1
+        },
+        "type": "mine",
+        "precondition": {},
+        "tool": {},
+        "abbr": "mine_melon"
+    },
+    "mine_beetroot": {
+        "output": {
+            "beetroot": 1
+        },
+        "type": "mine",
+        "precondition": {},
+        "tool": {},
+        "abbr": "mine_beetroot"
+    },
+    "mine_obsidian": {
+        "output": {
+            "obsidian": 1
+        },
+        "type": "mine",
+        "precondition": {"diamond_pickaxe": 1},
+        "tool": {},
+        "abbr": "mine_obsidian"
     }
 }
