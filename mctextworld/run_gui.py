@@ -31,7 +31,7 @@ def get_input(env):
 if __name__ == '__main__':
     print("Task: Obtain 1 diamond!")
     env = Env(
-        init_inv = {'log':3, 'cobblestone':8}, 
+        init_inv = {'oak_log':3, 'cobblestone':8}, 
         task_obj = {'diamond': 1}
         )
     state, reward, done, info = env.reset()

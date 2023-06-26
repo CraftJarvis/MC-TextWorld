@@ -20,10 +20,3 @@ class Agent:
         '''
         pass
 
-class DEPS_Agent(Agent):
-    '''
-    DEPS_Agent: This is a agent for test the online planner in Minecraft.
-    '''
-    def __init__(self):
-        pass
-
