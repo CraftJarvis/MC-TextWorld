@@ -2175,7 +2175,22 @@
             },
             "type": "smelt",
             "precondition": {
-                "iron_ore": 1
+                "iron_ore": 1,
+                "charcoal": 1
+            },
+            "tool": {
+                "furnace": 1
+            },
+            "abbr": "smelt_iron_ingot"
+        },
+        {
+            "output": {
+                "iron_ingot": 1
+            },
+            "type": "smelt",
+            "precondition": {
+                "iron_ore": 1,
+                "coal": 1
             },
             "tool": {
                 "furnace": 1
@@ -4456,21 +4471,6 @@
                 "crafting_table": 1
             },
             "abbr": "craft_leather_leggings"
-        }
-    ],
-    "smelt_diamond": [
-        {
-            "output": {
-                "diamond": 1
-            },
-            "type": "smelt",
-            "precondition": {
-                "diamond_ore": 1
-            },
-            "tool": {
-                "furnace": 1
-            },
-            "abbr": "smelt_diamond"
         }
     ],
     "craft_pink_concrete_powder": [
@@ -19290,42 +19290,42 @@
             "abbr": "mine_brown_mushroom"
         }
     ],
-    "mine_diamond_ore": [
+    "mine_diamond": [
         {
             "output": {
-                "diamond_ore": 1
+                "diamond": 1
             },
             "type": "mine",
             "precondition": {},
             "tool": {"iron_pickaxe": 1},
-            "abbr": "mine_diamond_ore"
+            "abbr": "mine_diamond"
         },
         {
             "output": {
-                "diamond_ore": 1
+                "diamond": 1
             },
             "type": "mine",
             "precondition": {},
             "tool": {"golden_pickaxe": 1},
-            "abbr": "mine_diamond_ore"
+            "abbr": "mine_diamond"
         },
         {
             "output": {
-                "diamond_ore": 1
+                "diamond": 1
             },
             "type": "mine",
             "precondition": {},
             "tool": {"diamond_pickaxe": 1},
-            "abbr": "mine_diamond_ore"
+            "abbr": "mine_diamond"
         },
         {
             "output": {
-                "diamond_ore": 1
+                "diamond": 1
             },
             "type": "mine",
             "precondition": {},
             "tool": {"netherite_pickaxe": 1},
-            "abbr": "mine_diamond_ore"
+            "abbr": "mine_diamond"
         }
     ],
     "mine_melon_slice": [

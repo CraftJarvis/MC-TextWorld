@@ -4,7 +4,7 @@ Visit the https://mermaid.live/ page to see the graph
 
 import json
 
-with open('goal_lib.json', 'r') as f:
+with open('action_lib.json', 'r') as f:
     goal_lib = json.load(f)
 
 f = open('graph_mermaid.txt', 'w') 

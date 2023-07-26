@@ -13,7 +13,7 @@ def get_input(env):
     # candidate_actions = print_candidate_actions(env)
     while True:
         candidate_actions = print_candidate_actions(env)
-        user_input = input("Input the No. or name of the action: ")
+        user_input = input("Choose the No. or Name of the action: ")
         if user_input.isdigit():
             if int(user_input) < len(candidate_actions):
                 action = candidate_actions[int(user_input)]
@@ -39,18 +39,18 @@ if __name__ == '__main__':
     # print(f'env.done: {env.done}')
     # print(f'env.check_item: {env.check_item(env.task_obj)}')
     for i in range(MAXIMUM_STEP):
-        try:
-            print(f"Step: {env.curr_step}/{MAXIMUM_STEP}")
-            print(f"Inventory: {state['inventory']}")
-            action = get_input(env)
-            state, reward, done, info = env.step(action)
-            # print("State: ", state)
-            # print("Reward: ", reward)
-            # print("Done: ", done)
-            print("Info: ", info)
-            print("#"*20)
-            if done:
-                print("Task Finished!")
-                break
-        except Exception as e:
-            print(e)
+        # try:
+        print(f"Step: {env.curr_step}/{MAXIMUM_STEP}")
+        print(f"Inventory: {state['inventory']}")
+        action = get_input(env)
+        state, reward, done, info = env.step(action)
+        # print("State: ", state)
+        # print("Reward: ", reward)
+        # print("Done: ", done)
+        print("Info: ", info)
+        print("#"*20)
+        if done:
+            print("Task Finished!")
+            break
+        # except Exception as e:
+        #     print(e)

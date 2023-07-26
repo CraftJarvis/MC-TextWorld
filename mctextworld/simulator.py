@@ -87,16 +87,18 @@ class Env(gym.Env):
         return next state, reward, done, info
         '''
         # Check action validation
-        res, msg = self.action_lib.check_action(self.state['inventory'], action)
+        act, msg = self.action_lib.check_action(self.state['inventory'], action)
         self.curr_step += 1
 
-        self.executed_actions.append(action)
+        self.executed_actions.append(act)
 
-        if not res:
-            return self.state, self.reward, self.done, {'action success': res, 'message': msg}
+        if not act:
+            return self.state, self.reward, self.done, {'action success': False, 'message': msg}
 
-        output = self.action_lib.action_lib[action]['output'] # effect 
-        precondition = self.action_lib.action_lib[action]['precondition'] # precondition
+        # output = self.action_lib.action_lib[action]['output'] # effect 
+        # precondition = self.action_lib.action_lib[action]['precondition'] # precondition
+        output = act['output'] # effect 
+        precondition = act['precondition'] # precondition
 
         # delete precondition items
         for key, val in precondition.items():
