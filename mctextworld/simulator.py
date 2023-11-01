@@ -27,11 +27,6 @@ class Env(gym.Env):
         self.action_lib = ActionLibrary()
 
         self.reset()
-        
-    # def load_goal_lib(self):
-    #     with open(goal_lib_path, 'r') as f:
-    #         context = json.load(f)
-    #     return dict(context)
 
     def reset(self):
         self.state = {
@@ -46,24 +41,6 @@ class Env(gym.Env):
 
         # return self.state # observation?
         return self.state, self.reward, self.done, self.info
-
-    # # check the action is valid or not
-    # def check_action(self, action):
-    #     # assert action in ["mine", "craft", "smelt"]
-    #     if action not in self.goal_lib:
-    #         raise Exception('Invalid action!')
-    #     pass
-
-    # def run_action(self, action):
-    #     if action == "mine":
-    #         pass
-    #     elif action == "craft":
-    #         pass
-    #     elif action == "smelt":
-    #         pass
-    #     else:
-    #         # action = no_op()
-    #         pass
 
     def check_done(self, inventory):
         if check_dict(inventory, self.task_obj):
@@ -109,51 +86,6 @@ class Env(gym.Env):
             else:
                 self.state['inventory'][key] = val
         
-        # # Check action preconditions
-        # pre_flag = True
-        # goal = self.goal_lib[action]
-        # for key, val in goal['precondition'].items():
-        #     if key not in self.state['inventory']:
-        #         pre_flag = False
-        #         break
-        #     if self.state['inventory'][key] < val:
-        #         pre_flag = False
-        #         break
-        # for key, val in goal['tool'].items():
-        #     if key not in self.state['inventory']:
-        #         pre_flag = False
-        #         break
-        #     if self.state['inventory'][key] < val:
-        #         pre_flag = False
-        #         break
-        
-        # if not pre_flag:
-        #     return self.state, 0, self.done, {'success': False}
-
-        # # Execute action
-        # for key, val in goal['precondition'].items():
-        #     self.state['inventory'][key] -= val
-        #     if self.state['inventory'][key] == 0:
-        #         del self.state['inventory'][key]
-        # for key, val in goal['output'].items():
-        #     if key not in self.state['inventory']:
-        #         self.state['inventory'][key] = 0
-        #     self.state['inventory'][key] += val
-
-        # Check if the task is done
-        # is_done = True
-        # for key, val in self.task_obj.items():
-        #     if key not in self.state['inventory']:
-        #         is_done = False
-        #         break
-        #     if self.state['inventory'][key] < val:
-        #         is_done = False
-        #         break
-        # if is_done:
-        #     self.done = True
-
-        # if self.step > MAXIMUM_STEP:
-        #     self.state, self.reward, self.done, {'success': False}
         self.done = self.check_done(inventory = self.state['inventory'])
         inventory = self.check_inventory(inventory = self.state['inventory'])
 
