@@ -38,9 +38,9 @@ if __name__ == '__main__':
     # print(f'env.state: {env.state}')
     # print(f'env.done: {env.done}')
     # print(f'env.check_item: {env.check_item(env.task_obj)}')
-    for i in range(MAXIMUM_STEP):
+    for i in range(env.maximum_step):
         try:
-            print(f"Step: {env.curr_step}/{MAXIMUM_STEP}")
+            print(f"Step: {env.curr_step}/{env.maximum_step}")
             print(f"Inventory: {state['inventory']}")
             action = get_input(env)
             state, reward, done, info = env.step(action)

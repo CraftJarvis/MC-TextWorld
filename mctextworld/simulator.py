@@ -9,7 +9,7 @@ from gym.utils import seeding
 from mctextworld.action import ActionLibrary
 from mctextworld.utils import *
 
-MAXIMUM_STEP = 100
+# MAXIMUM_STEP = 100
 
 # prefix = os.getcwd()
 # action_lib_path = os.path.join(prefix, 'action_lib.json')
@@ -18,13 +18,14 @@ class Env(gym.Env):
     '''
     Minecraft Simulator: This is a simulator for test the online planner in Minecraft.
     '''
-    def __init__(self, init_inv = {}, task_obj = {}):
+    def __init__(self, init_inv = {}, task_obj = {}, max_step = 100):
         self.init_inv = init_inv
         self.legal_actions = ["mine", "craft", "smelt"]
         self.task_obj = task_obj
 
         # self.goal_lib = self.load_goal_lib()
         self.action_lib = ActionLibrary()
+        self.maximum_step = max_step
 
         self.reset()
 
@@ -59,10 +60,23 @@ class Env(gym.Env):
                 pass
         return inventory
 
+    def check_max_step(self):
+        if self.curr_step > self.maximum_step:
+            return True
+        else:
+            return False
+
     def step(self, action: str):
         '''
         return next state, reward, done, info
         '''
+        # check maximum step
+        reach_maximum_step = self.check_max_step()
+        if reach_maximum_step:
+            return self.state, self.reward, self.done, {
+            'action success': False, 
+            'reach_maximum_step': reach_maximum_step
+            }
         # Check action validation
         res, msg = self.action_lib.check_action(self.state['inventory'], action)
         self.curr_step += 1
@@ -89,7 +103,10 @@ class Env(gym.Env):
         self.done = self.check_done(inventory = self.state['inventory'])
         inventory = self.check_inventory(inventory = self.state['inventory'])
 
-        return self.state, self.reward, self.done, {'action success': True}
+        return self.state, self.reward, self.done, {
+            'action success': True, 
+            'reach_maximum_step': reach_maximum_step
+            }
 
     # def check_item(self, item:str):
     #     if item in self.state['inventory'].keys():
