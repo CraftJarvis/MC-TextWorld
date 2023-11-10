@@ -80,6 +80,8 @@ with gr.Blocks(theme = "gradio/base") as demo:
                     min_width=100,
                 )
     clear = gr.ClearButton([msg, chatbot])
+    # clear = gr.Button("清除")
+    # clear.click(lambda: None, None, chatbot, queue=False)
 
     state = gr.State()
 
