@@ -1,4 +1,4 @@
-# To-Dos
+# To-Dos: reasoning, long-horizon, multi-hop, knowledge dense, etc.
 
 1. add a hyper-parameter `fix_action_space` to control the action space:
    a. the action space is fixed: 
