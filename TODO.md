@@ -17,8 +17,8 @@
 4. visualization 
 
 ACTION SPACE:
-#########################################
-# 0 no_op
+##########################################
+# 0 no_op                                #
 # ---------------------------
 # Mine Groups:
 # 1 oak_log | 2 birch_log | 
@@ -33,3 +33,32 @@ Current Observation:
 TASK: {diamond:1} --- STEP: 0/100 
 #########################################
 Input: 
+
+
+5. Add task.py 
+
+object-centric task 
+
+```tasks.json 
+[
+   {
+      "task_name": "obtain_1_diamond",
+      "description": f"Obtain {1} {diamond} from {empty inventory}",
+      "initial_inventory": {},
+      "object": {"diamond":1},
+   }
+]
+```
+
+```group.json 
+[
+   "wood": ["wooden_pickaxe", "wooden_axe", ....]
+   "stone": []
+]
+```
+
+6. load test plans 
+
+```plan.json 
+
+```
