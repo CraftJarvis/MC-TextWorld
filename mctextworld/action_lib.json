@@ -18982,15 +18982,6 @@
             },
             "type": "mine",
             "precondition": {},
-            "tool": {"golden_pickaxe": 1},
-            "abbr": "mine_iron_ore"
-        },
-        {
-            "output": {
-                "iron_ore": 1
-            },
-            "type": "mine",
-            "precondition": {},
             "tool": {"diamond_pickaxe": 1},
             "abbr": "mine_iron_ore"
         },
@@ -19306,15 +19297,6 @@
             },
             "type": "mine",
             "precondition": {},
-            "tool": {"golden_pickaxe": 1},
-            "abbr": "mine_diamond"
-        },
-        {
-            "output": {
-                "diamond": 1
-            },
-            "type": "mine",
-            "precondition": {},
             "tool": {"diamond_pickaxe": 1},
             "abbr": "mine_diamond"
         },
@@ -19435,15 +19417,6 @@
             "type": "mine",
             "precondition": {},
             "tool": {"iron_pickaxe": 1},
-            "abbr": "mine_redstone_ore"
-        },
-        {
-            "output": {
-                "redstone_ore": 1
-            },
-            "type": "mine",
-            "precondition": {},
-            "tool": {"golden_pickaxe": 1},
             "abbr": "mine_redstone_ore"
         },
         {
@@ -19667,15 +19640,6 @@
             },
             "type": "mine",
             "precondition": {},
-            "tool": {"golden_pickaxe": 1},
-            "abbr": "mine_emerald"
-        },
-        {
-            "output": {
-                "emerald": 1
-            },
-            "type": "mine",
-            "precondition": {},
             "tool": {"diamond_pickaxe": 1},
             "abbr": "mine_emerald"
         },
@@ -19716,15 +19680,6 @@
             },
             "type": "mine",
             "precondition": {"iron_pickaxe": 1},
-            "tool": {},
-            "abbr": "mine_lapis_lazuli"
-        },
-        {
-            "output": {
-                "lapis_lazuli": 1
-            },
-            "type": "mine",
-            "precondition": {"golden_pickaxe": 1},
             "tool": {},
             "abbr": "mine_lapis_lazuli"
         },
@@ -19953,15 +19908,6 @@
             "type": "mine",
             "precondition": {},
             "tool": {"iron_pickaxe": 1},
-            "abbr": "mine_gold_ore"
-        },
-        {
-            "output":{
-                "gold_ore": 1
-            },
-            "type": "mine",
-            "precondition": {},
-            "tool": {"golden_pickaxe": 1},
             "abbr": "mine_gold_ore"
         },
         {

@@ -59,8 +59,6 @@ class ActionLibrary:
     def get_candidate_actions(self, inventory:dict):
         candidate_actions = []
         for action in self.all_actions:
-            # print(f"action: {action}")
-            # print(f"action details: {self.action_lib[action]}")
             for cand_action in self.action_lib[action]:
                 if check_dict(inventory, cand_action['precondition']) and check_dict(inventory, cand_action['tool']):
                     candidate_actions.append(action)
