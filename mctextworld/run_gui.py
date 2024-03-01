@@ -35,7 +35,7 @@ def get_input(env, fix_action_space, plan_step=None):
             user_input = input("Choose the No. or Name of the action: ")
         else:
             user_input = plan_step["type"]+"_"+plan_step["text"]
-            print("The agent choose: {}".format(user_input))
+            print("The agent 's choice: {}".format(user_input))
         
         action = None
         if user_input.isdigit():
