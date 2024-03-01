@@ -22,7 +22,7 @@ def print_candidate_actions(action_lib, candidate_actions):
         print("")
     return candidate_actions
 
-def get_input(env, fix_action_space, plan_step):
+def get_input(env, fix_action_space, plan_step=None):
     # candidate_actions = print_candidate_actions(env)
     while True:
         if(fix_action_space):
@@ -57,10 +57,11 @@ def get_input(env, fix_action_space, plan_step):
     return action
 
 if __name__ == '__main__':
+    
     parser = argparse.ArgumentParser()
     parser.add_argument('--fix_action_space', action='store_true', help='Fix the action space.')
     parser.add_argument('--task_name', type=str, default='diamond_pickaxe', help='Task Name which should be in the tasks.json')
-    parser.add_argument('--use_plan', action = 'store_true', help='Use the plan to guide the action selection.')
+    parser.add_argument('--use_plan', action = 'store_true', help='Use the plan to guide the action selection. The task name should be a key in the plans.json')
     args = parser.parse_args()
     
     with open("tasks.json", "r") as j:
@@ -71,7 +72,7 @@ if __name__ == '__main__':
             task_setting = t
             break
     if(task_setting is None):
-        print("Task Not Found!")
+        raise ValueError("Task Not Found!")
     
     print("Task: {}!".format(task_setting['description']))
     env = Env(
@@ -94,16 +95,10 @@ if __name__ == '__main__':
         print("")
         env.print_obs()
         print("")
-
-        #action = plan[i]["type"]+"_"+plan[i]["text"]
-
         if plan is not None:
             goal_reached = 1
             if "goal" in plan[j]:
                 for item in plan[j]["goal"]:
-                    if(item == "furnace"):
-                        import pdb
-                        pdb.set_trace()
                     if item not in env.obs["inventory"] or plan[j]["goal"][item]>env.obs["inventory"][item]:
                         goal_reached = 0
                         break
@@ -111,14 +106,17 @@ if __name__ == '__main__':
             if(j>=len(plan)):
                 print("Task Failed!")
                 break
-            1
-        action = get_input(env, args.fix_action_space, plan[j])
-        
+        if(plan is not None):
+            action = get_input(env, args.fix_action_space, plan[j])
+        else:
+            action = get_input(env, args.fix_action_space)
+            
         if action == None:
             print("Task Failed!")
             break
         obs, reward, done, info = env.step(action)
         if done:
+            print("\n\n\n\n")
             env.print_obs()
             print("Task Finished!")
             break

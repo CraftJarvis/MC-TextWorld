@@ -20155,5 +20155,16 @@
             "tool": {},
             "abbr": "mine_hay_block"
         }
+    ],
+    "mine_white_wool": [
+        {
+            "output": {
+                "white_wool": 1
+            },
+            "type": "mine",
+            "precondition": {},
+            "tool": {},
+            "abbr": "mine_white_wool"
+        }
     ]
 }

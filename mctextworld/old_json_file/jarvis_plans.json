@@ -1,4 +1,4 @@
-{
+{  
     "test_steve": [
         {
             "goal": {
@@ -488,13 +488,6 @@
         },
         {
             "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
-        },
-        {
-            "goal": {
                 "glass": 1
             },
             "type": "smelt",
@@ -550,13 +543,6 @@
             },
             "type": "craft",
             "text": "furnace"
-        },
-        {
-            "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
         },
         {
             "goal": {
@@ -831,27 +817,6 @@
         },
         {
             "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
-        },
-        {
-            "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
-        },
-        {
-            "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
-        },
-        {
-            "goal": {
                 "iron_ingot": 3
             },
             "type": "smelt",
@@ -870,27 +835,6 @@
             },
             "type": "mine",
             "text": "gold_ore"
-        },
-        {
-            "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
-        },
-        {
-            "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
-        },
-        {
-            "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
         },
         {
             "goal": {
@@ -980,27 +924,6 @@
         },
         {
             "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
-        },
-        {
-            "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
-        },
-        {
-            "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
-        },
-        {
-            "goal": {
                 "iron_ingot": 3
             },
             "type": "smelt",
@@ -1019,62 +942,6 @@
             },
             "type": "mine",
             "text": "gold_ore"
-        },
-        {
-            "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
-        },
-        {
-            "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
-        },
-        {
-            "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
-        },
-        {
-            "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
-        },
-        {
-            "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
-        },
-        {
-            "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
-        },
-        {
-            "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
-        },
-        {
-            "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
         },
         {
             "goal": {
@@ -1157,27 +1024,6 @@
         },
         {
             "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
-        },
-        {
-            "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
-        },
-        {
-            "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
-        },
-        {
-            "goal": {
                 "iron_ingot": 3
             },
             "type": "smelt",
@@ -1196,13 +1042,6 @@
             },
             "type": "mine",
             "text": "gold_ore"
-        },
-        {
-            "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
         },
         {
             "goal": {
@@ -1285,27 +1124,6 @@
         },
         {
             "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
-        },
-        {
-            "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
-        },
-        {
-            "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
-        },
-        {
-            "goal": {
                 "iron_ingot": 3
             },
             "type": "smelt",
@@ -1324,34 +1142,6 @@
             },
             "type": "mine",
             "text": "gold_ore"
-        },
-        {
-            "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
-        },
-        {
-            "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
-        },
-        {
-            "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
-        },
-        {
-            "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
         },
         {
             "goal": {
@@ -1441,27 +1231,6 @@
         },
         {
             "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
-        },
-        {
-            "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
-        },
-        {
-            "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
-        },
-        {
-            "goal": {
                 "iron_ingot": 3
             },
             "type": "smelt",
@@ -1480,62 +1249,6 @@
             },
             "type": "mine",
             "text": "gold_ore"
-        },
-        {
-            "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
-        },
-        {
-            "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
-        },
-        {
-            "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
-        },
-        {
-            "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
-        },
-        {
-            "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
-        },
-        {
-            "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
-        },
-        {
-            "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
-        },
-        {
-            "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
         },
         {
             "goal": {
@@ -1618,27 +1331,6 @@
         },
         {
             "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
-        },
-        {
-            "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
-        },
-        {
-            "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
-        },
-        {
-            "goal": {
                 "iron_ingot": 3
             },
             "type": "smelt",
@@ -1657,55 +1349,6 @@
             },
             "type": "mine",
             "text": "gold_ore"
-        },
-        {
-            "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
-        },
-        {
-            "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
-        },
-        {
-            "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
-        },
-        {
-            "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
-        },
-        {
-            "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
-        },
-        {
-            "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
-        },
-        {
-            "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
         },
         {
             "goal": {
@@ -1788,27 +1431,6 @@
         },
         {
             "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
-        },
-        {
-            "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
-        },
-        {
-            "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
-        },
-        {
-            "goal": {
                 "iron_ingot": 3
             },
             "type": "smelt",
@@ -1827,34 +1449,6 @@
             },
             "type": "mine",
             "text": "gold_ore"
-        },
-        {
-            "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
-        },
-        {
-            "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
-        },
-        {
-            "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
-        },
-        {
-            "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
         },
         {
             "goal": {
@@ -1937,27 +1531,6 @@
         },
         {
             "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
-        },
-        {
-            "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
-        },
-        {
-            "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
-        },
-        {
-            "goal": {
                 "iron_ingot": 3
             },
             "type": "smelt",
@@ -1976,27 +1549,6 @@
             },
             "type": "mine",
             "text": "gold_ore"
-        },
-        {
-            "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
-        },
-        {
-            "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
-        },
-        {
-            "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
         },
         {
             "goal": {
@@ -2079,27 +1631,6 @@
         },
         {
             "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
-        },
-        {
-            "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
-        },
-        {
-            "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
-        },
-        {
-            "goal": {
                 "iron_ingot": 3
             },
             "type": "smelt",
@@ -2118,27 +1649,6 @@
             },
             "type": "mine",
             "text": "gold_ore"
-        },
-        {
-            "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
-        },
-        {
-            "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
-        },
-        {
-            "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
         },
         {
             "goal": {
@@ -2374,27 +1884,6 @@
         },
         {
             "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
-        },
-        {
-            "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
-        },
-        {
-            "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
-        },
-        {
-            "goal": {
                 "iron_ingot": 3
             },
             "type": "smelt",
@@ -2471,27 +1960,6 @@
             },
             "type": "mine",
             "text": "iron_ore"
-        },
-        {
-            "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
-        },
-        {
-            "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
-        },
-        {
-            "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
         },
         {
             "goal": {
@@ -2588,13 +2056,6 @@
         },
         {
             "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
-        },
-        {
-            "goal": {
                 "iron_ingot": 1
             },
             "type": "smelt",
@@ -2671,27 +2132,6 @@
             },
             "type": "mine",
             "text": "iron_ore"
-        },
-        {
-            "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
-        },
-        {
-            "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
-        },
-        {
-            "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
         },
         {
             "goal": {
@@ -2788,27 +2228,6 @@
         },
         {
             "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
-        },
-        {
-            "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
-        },
-        {
-            "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
-        },
-        {
-            "goal": {
                 "iron_ingot": 3
             },
             "type": "smelt",
@@ -2827,13 +2246,6 @@
             },
             "type": "mine",
             "text": "gold_ore"
-        },
-        {
-            "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
         },
         {
             "goal": {
@@ -2962,27 +2374,6 @@
         },
         {
             "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
-        },
-        {
-            "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
-        },
-        {
-            "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
-        },
-        {
-            "goal": {
                 "iron_ingot": 3
             },
             "type": "smelt",
@@ -3076,27 +2467,6 @@
         },
         {
             "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
-        },
-        {
-            "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
-        },
-        {
-            "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
-        },
-        {
-            "goal": {
                 "iron_ingot": 3
             },
             "type": "smelt",
@@ -3183,13 +2553,6 @@
         },
         {
             "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
-        },
-        {
-            "goal": {
                 "iron_ingot": 1
             },
             "type": "smelt",
@@ -3266,34 +2629,6 @@
             },
             "type": "mine",
             "text": "iron_ore"
-        },
-        {
-            "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
-        },
-        {
-            "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
-        },
-        {
-            "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
-        },
-        {
-            "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
         },
         {
             "goal": {
@@ -3376,48 +2711,6 @@
         },
         {
             "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
-        },
-        {
-            "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
-        },
-        {
-            "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
-        },
-        {
-            "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
-        },
-        {
-            "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
-        },
-        {
-            "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
-        },
-        {
-            "goal": {
                 "iron_ingot": 6
             },
             "type": "smelt",
@@ -3494,27 +2787,6 @@
             },
             "type": "mine",
             "text": "iron_ore"
-        },
-        {
-            "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
-        },
-        {
-            "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
-        },
-        {
-            "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
         },
         {
             "goal": {
@@ -3805,55 +3077,6 @@
         },
         {
             "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
-        },
-        {
-            "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
-        },
-        {
-            "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
-        },
-        {
-            "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
-        },
-        {
-            "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
-        },
-        {
-            "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
-        },
-        {
-            "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
-        },
-        {
-            "goal": {
                 "iron_ingot": 7
             },
             "type": "smelt",
@@ -3923,27 +3146,6 @@
             },
             "type": "craft",
             "text": "furnace"
-        },
-        {
-            "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
-        },
-        {
-            "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
-        },
-        {
-            "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
         },
         {
             "goal": {
@@ -4023,27 +3225,6 @@
             },
             "type": "mine",
             "text": "iron_ore"
-        },
-        {
-            "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
-        },
-        {
-            "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
-        },
-        {
-            "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
         },
         {
             "goal": {
@@ -4156,27 +3337,6 @@
         },
         {
             "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
-        },
-        {
-            "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
-        },
-        {
-            "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
-        },
-        {
-            "goal": {
                 "iron_ingot": 3
             },
             "type": "smelt",
@@ -4195,13 +3355,6 @@
             },
             "type": "mine",
             "text": "gold_ore"
-        },
-        {
-            "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
         },
         {
             "goal": {
@@ -4372,13 +3525,6 @@
         },
         {
             "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
-        },
-        {
-            "goal": {
                 "iron_ingot": 1
             },
             "type": "smelt",
@@ -4434,13 +3580,6 @@
             },
             "type": "craft",
             "text": "furnace"
-        },
-        {
-            "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
         },
         {
             "goal": {
@@ -4567,27 +3706,6 @@
         },
         {
             "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
-        },
-        {
-            "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
-        },
-        {
-            "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
-        },
-        {
-            "goal": {
                 "iron_ingot": 3
             },
             "type": "smelt",
@@ -4664,48 +3782,6 @@
             },
             "type": "mine",
             "text": "iron_ore"
-        },
-        {
-            "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
-        },
-        {
-            "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
-        },
-        {
-            "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
-        },
-        {
-            "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
-        },
-        {
-            "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
-        },
-        {
-            "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
         },
         {
             "goal": {
@@ -4848,41 +3924,6 @@
         },
         {
             "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
-        },
-        {
-            "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
-        },
-        {
-            "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
-        },
-        {
-            "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
-        },
-        {
-            "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
-        },
-        {
-            "goal": {
                 "iron_ingot": 5
             },
             "type": "smelt",
@@ -4955,13 +3996,6 @@
         },
         {
             "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
-        },
-        {
-            "goal": {
                 "cooked_chicken": 1
             },
             "type": "smelt",
@@ -5024,13 +4058,6 @@
             },
             "type": "craft",
             "text": "furnace"
-        },
-        {
-            "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
         },
         {
             "goal": {
@@ -5099,13 +4126,6 @@
         },
         {
             "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
-        },
-        {
-            "goal": {
                 "cooked_porkchop": 1
             },
             "type": "smelt",
@@ -5168,13 +4188,6 @@
             },
             "type": "craft",
             "text": "furnace"
-        },
-        {
-            "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
         },
         {
             "goal": {
@@ -5298,20 +4311,6 @@
             },
             "type": "mine",
             "text": "iron_ore"
-        },
-        {
-            "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
-        },
-        {
-            "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
         },
         {
             "goal": {
@@ -5523,13 +4522,6 @@
             },
             "type": "mine",
             "text": "iron_ore"
-        },
-        {
-            "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
         },
         {
             "goal": {
@@ -5760,27 +4752,6 @@
         },
         {
             "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
-        },
-        {
-            "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
-        },
-        {
-            "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
-        },
-        {
-            "goal": {
                 "iron_ingot": 3
             },
             "type": "smelt",
@@ -5874,27 +4845,6 @@
         },
         {
             "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
-        },
-        {
-            "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
-        },
-        {
-            "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
-        },
-        {
-            "goal": {
                 "iron_ingot": 3
             },
             "type": "smelt",
@@ -5913,41 +4863,6 @@
             },
             "type": "mine",
             "text": "gold_ore"
-        },
-        {
-            "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
-        },
-        {
-            "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
-        },
-        {
-            "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
-        },
-        {
-            "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
-        },
-        {
-            "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
         },
         {
             "goal": {
@@ -6027,41 +4942,6 @@
             },
             "type": "mine",
             "text": "iron_ore"
-        },
-        {
-            "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
-        },
-        {
-            "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
-        },
-        {
-            "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
-        },
-        {
-            "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
-        },
-        {
-            "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
         },
         {
             "goal": {
@@ -6232,27 +5112,6 @@
         },
         {
             "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
-        },
-        {
-            "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
-        },
-        {
-            "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
-        },
-        {
-            "goal": {
                 "iron_ingot": 3
             },
             "type": "smelt",
@@ -6271,20 +5130,6 @@
             },
             "type": "mine",
             "text": "gold_ore"
-        },
-        {
-            "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
-        },
-        {
-            "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
         },
         {
             "goal": {
@@ -6367,20 +5212,6 @@
         },
         {
             "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
-        },
-        {
-            "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
-        },
-        {
-            "goal": {
                 "iron_ingot": 2
             },
             "type": "smelt",
@@ -6457,27 +5288,6 @@
             },
             "type": "mine",
             "text": "iron_ore"
-        },
-        {
-            "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
-        },
-        {
-            "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
-        },
-        {
-            "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
         },
         {
             "goal": {
@@ -6574,27 +5384,6 @@
         },
         {
             "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
-        },
-        {
-            "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
-        },
-        {
-            "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
-        },
-        {
-            "goal": {
                 "iron_ingot": 3
             },
             "type": "smelt",
@@ -6685,27 +5474,6 @@
             },
             "type": "mine",
             "text": "iron_ore"
-        },
-        {
-            "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
-        },
-        {
-            "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
-        },
-        {
-            "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
         },
         {
             "goal": {
@@ -6802,27 +5570,6 @@
         },
         {
             "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
-        },
-        {
-            "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
-        },
-        {
-            "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
-        },
-        {
-            "goal": {
                 "iron_ingot": 3
             },
             "type": "smelt",
@@ -6913,27 +5660,6 @@
             },
             "type": "mine",
             "text": "iron_ore"
-        },
-        {
-            "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
-        },
-        {
-            "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
-        },
-        {
-            "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
         },
         {
             "goal": {
@@ -7030,27 +5756,6 @@
         },
         {
             "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
-        },
-        {
-            "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
-        },
-        {
-            "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
-        },
-        {
-            "goal": {
                 "iron_ingot": 3
             },
             "type": "smelt",
@@ -7144,27 +5849,6 @@
         },
         {
             "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
-        },
-        {
-            "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
-        },
-        {
-            "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
-        },
-        {
-            "goal": {
                 "iron_ingot": 3
             },
             "type": "smelt",
@@ -7255,20 +5939,6 @@
             },
             "type": "mine",
             "text": "iron_ore"
-        },
-        {
-            "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
-        },
-        {
-            "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
         },
         {
             "goal": {
@@ -7459,48 +6129,6 @@
             },
             "type": "mine",
             "text": "iron_ore"
-        },
-        {
-            "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
-        },
-        {
-            "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
-        },
-        {
-            "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
-        },
-        {
-            "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
-        },
-        {
-            "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
-        },
-        {
-            "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
         },
         {
             "goal": {
@@ -7775,41 +6403,6 @@
         },
         {
             "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
-        },
-        {
-            "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
-        },
-        {
-            "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
-        },
-        {
-            "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
-        },
-        {
-            "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
-        },
-        {
-            "goal": {
                 "iron_ingot": 5
             },
             "type": "smelt",
@@ -7886,13 +6479,6 @@
             },
             "type": "mine",
             "text": "iron_ore"
-        },
-        {
-            "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
         },
         {
             "goal": {
@@ -7975,55 +6561,6 @@
         },
         {
             "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
-        },
-        {
-            "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
-        },
-        {
-            "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
-        },
-        {
-            "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
-        },
-        {
-            "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
-        },
-        {
-            "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
-        },
-        {
-            "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
-        },
-        {
-            "goal": {
                 "iron_ingot": 7
             },
             "type": "smelt",
@@ -8100,62 +6637,6 @@
             },
             "type": "mine",
             "text": "iron_ore"
-        },
-        {
-            "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
-        },
-        {
-            "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
-        },
-        {
-            "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
-        },
-        {
-            "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
-        },
-        {
-            "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
-        },
-        {
-            "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
-        },
-        {
-            "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
-        },
-        {
-            "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
         },
         {
             "goal": {
@@ -8238,20 +6719,6 @@
         },
         {
             "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
-        },
-        {
-            "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
-        },
-        {
-            "goal": {
                 "iron_ingot": 2
             },
             "type": "smelt",
@@ -8331,20 +6798,6 @@
         },
         {
             "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
-        },
-        {
-            "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
-        },
-        {
-            "goal": {
                 "iron_ingot": 2
             },
             "type": "smelt",
@@ -8421,20 +6874,6 @@
             },
             "type": "mine",
             "text": "iron_ore"
-        },
-        {
-            "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
-        },
-        {
-            "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
         },
         {
             "goal": {
@@ -8524,20 +6963,6 @@
         },
         {
             "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
-        },
-        {
-            "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
-        },
-        {
-            "goal": {
                 "iron_ingot": 2
             },
             "type": "smelt",
@@ -8624,34 +7049,6 @@
         },
         {
             "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
-        },
-        {
-            "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
-        },
-        {
-            "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
-        },
-        {
-            "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
-        },
-        {
-            "goal": {
                 "iron_ingot": 4
             },
             "type": "smelt",
@@ -8728,34 +7125,6 @@
             },
             "type": "mine",
             "text": "iron_ore"
-        },
-        {
-            "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
-        },
-        {
-            "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
-        },
-        {
-            "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
-        },
-        {
-            "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
         },
         {
             "goal": {
@@ -8852,27 +7221,6 @@
         },
         {
             "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
-        },
-        {
-            "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
-        },
-        {
-            "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
-        },
-        {
-            "goal": {
                 "iron_ingot": 3
             },
             "type": "smelt",
@@ -8891,48 +7239,6 @@
             },
             "type": "mine",
             "text": "iron_ore"
-        },
-        {
-            "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
-        },
-        {
-            "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
-        },
-        {
-            "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
-        },
-        {
-            "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
-        },
-        {
-            "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
-        },
-        {
-            "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
         },
         {
             "goal": {
@@ -9029,27 +7335,6 @@
         },
         {
             "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
-        },
-        {
-            "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
-        },
-        {
-            "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
-        },
-        {
-            "goal": {
                 "iron_ingot": 3
             },
             "type": "smelt",
@@ -9068,34 +7353,6 @@
             },
             "type": "mine",
             "text": "iron_ore"
-        },
-        {
-            "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
-        },
-        {
-            "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
-        },
-        {
-            "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
-        },
-        {
-            "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
         },
         {
             "goal": {
@@ -9182,27 +7439,6 @@
             },
             "type": "mine",
             "text": "iron_ore"
-        },
-        {
-            "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
-        },
-        {
-            "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
-        },
-        {
-            "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
         },
         {
             "goal": {
@@ -9296,27 +7532,6 @@
             },
             "type": "mine",
             "text": "iron_ore"
-        },
-        {
-            "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
-        },
-        {
-            "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
-        },
-        {
-            "goal": {
-                "coal": 1
-            },
-            "type": "mine",
-            "text": "coal"
         },
         {
             "goal": {
