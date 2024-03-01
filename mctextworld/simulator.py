@@ -131,7 +131,7 @@ class Env(gym.Env):
         
         self.done = self.check_done(inventory = self.obs['inventory'])
         inventory = self.check_inventory(inventory = self.obs['inventory'])
-
+        self.info = {'action success': True}
         return self.obs, self.reward, self.done, {'action success': True}
     
 if __name__ == '__main__':

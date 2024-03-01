@@ -95,6 +95,7 @@ if __name__ == '__main__':
         print("")
         env.print_obs()
         print("")
+        
         if plan is not None:
             goal_reached = 1
             if "goal" in plan[j]:
@@ -106,7 +107,6 @@ if __name__ == '__main__':
             if(j>=len(plan)):
                 print("Task Failed!")
                 break
-        if(plan is not None):
             action = get_input(env, args.fix_action_space, plan[j])
         else:
             action = get_input(env, args.fix_action_space)
