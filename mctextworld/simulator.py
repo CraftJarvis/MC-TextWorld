@@ -8,7 +8,7 @@ from gym.utils import seeding
 
 from mctextworld.action import ActionLibrary
 from mctextworld.utils import *
-
+from pytermgui import Container, inline
 MAXIMUM_STEP = 100
 
 # prefix = os.getcwd()
@@ -39,16 +39,29 @@ class Env(gym.Env):
     #     return dict(context)
     
     def print_obs(self):
-        print("CURRENT STATE:")
-        print("-----------------------------")
-        print("Inventory: ", self.obs['inventory'])
-        print("position: ", self.obs['position'])
-        print("biome: ", self.obs['biome'])
-        print("Reward: ", self.reward)
-        print("Done: ", self.done)
-        print("Info: ", self.info)
-        print("-----------------------------")
-
+        # print("CURRENT STATE:")
+        # print("-----------------------------")
+        # print("Inventory: ", self.obs['inventory'])
+        # print("position: ", self.obs['position'])
+        # print("biome: ", self.obs['biome'])
+        # print("Reward: ", self.reward)
+        # print("Done: ", self.done)
+        # print("Info: ", self.info)
+        # print("-----------------------------")
+        container = Container(
+            "[bold accent]CURRENT STATE",
+            "",
+            "Inventory: " + str(self.obs['inventory']),
+            "Position: " + str(self.obs['position']),
+            "Biome: " + str(self.obs['biome']),
+            "Reward: " + str(self.reward),
+            "Done: " + str(self.done),
+            "Info: " + str(self.info),
+            parent_align=0
+        )
+        #for line in container.get_lines():
+        #    print(line)
+        return container
     def reset(self):
         self.obs = {
             "inventory": copy.deepcopy(self.init_inv),
@@ -104,6 +117,7 @@ class Env(gym.Env):
         '''
         return next obs, reward, done, info
         '''
+        
         # Check action validation
         act, msg = self.action_lib.check_action(self.obs['inventory'], action)
         self.curr_step += 1
@@ -124,6 +138,7 @@ class Env(gym.Env):
         
         # add output items
         for key, val in output.items():
+            
             if key in self.obs['inventory'].keys():
                 self.obs['inventory'][key] += val
             else:

@@ -1,7 +1,63 @@
 from mctextworld.simulator import *
 import argparse
+import pytermgui as ptg
+from pytermgui import Container,inline,tim,Window,Label,Button,Splitter,InputField
+
+user_input = "not_changed_yet"
+
+def quit():
+    manager.close()
+
+def on_click(bt):
+    global window
+    manager.remove(window)
+    del window
+    info_list = "Please choose your action"
+    action=bt
+    if action == None:
+        info_list = ("Task Failed!")
+        return
+    obs, reward, done, info = env.step(action)
+    if done:
+        _, c = get_candidate_action(env, args.fix_action_space)
+        obs_container = env.print_obs()
+        window = Window(
+            f"[bold blue]Task: {env.task_name}",
+            f"Step: {env.curr_step}/{MAXIMUM_STEP}   Reward: {env.reward}",
+            f"Done!",
+            Button("Press Here to quit", onclick = lambda b:quit()),
+            width=150
+        )
+        window.set_title(f"Task:{env.task_name}", postion="center")
+        return
+    
+    elif (env.curr_step>=MAXIMUM_STEP):
+        window = Window(
+            f"[bold blue]Task: {env.task_name}",
+            f"Step: {env.curr_step}/{MAXIMUM_STEP}   Reward: {env.reward}",
+            f"Fail: Your steps are used up!",
+            Button("Press Here to quit", onclick = lambda b:quit()),
+            width=150
+        )
+        window.set_title(f"Task:{env.task_name}", postion="center")
+        return
+    
+    _, c = get_candidate_action(env, args.fix_action_space)
+    obs_container = env.print_obs()
+    window = Window(
+        f"[bold blue]Task: {env.task_name}",
+        f"Step: {env.curr_step}/{MAXIMUM_STEP}   Reward: {env.reward}",
+        obs_container,
+        c,
+        info_list,
+        width=150
+    )
+    manager.add(window)
+    return
+
 def print_candidate_actions(action_lib, candidate_actions):
-    print("Candidate Actions: ", )
+    content_list = []
+    content_list.append(Label("[bold accent]Candidate Actions"))
     index = 0 
     type2act = {}
     for action in candidate_actions:
@@ -11,31 +67,46 @@ def print_candidate_actions(action_lib, candidate_actions):
         type2act[type].append(action)
     for type in type2act:
         
-        print("---------------")
-        print("group: ", type)
+        #print("group: ", type)
+        content_list.append(Label("[bold lightgreen]"+type))
         type2act[type] = sorted(type2act[type])
-        print("| ", end="")
+        action_list = []
         for action in type2act[type]:
-            print(f"{index}: {action}", end=" | ")
+                
+            action_list.append(Button(f"{index}: {action}", onclick = lambda b: on_click(b.label.split(":")[1].strip())))
             candidate_actions[index] = action
             index += 1
-        print("")
-    return candidate_actions
+        splitter_list = []
+        while len(action_list)%3!=0:
+            action_list.append(Label(" "))
+        for i in range((len(action_list))//3):
+            splitter_list.append(Splitter(action_list[i*3], action_list[i*3+1], action_list[i*3+2], separator=" "))
+        
+        content_list.extend(splitter_list)
+    c = Container(*content_list, width=150)
+    return candidate_actions, c
+
+def get_candidate_action(env, fix_action_space):
+    if(fix_action_space):
+        candidate_actions = env.action_lib.all_actions
+    else:
+        candidate_actions = env.action_lib.get_candidate_actions(env.obs['inventory'])
+    candidate_actions, c = print_candidate_actions(env.action_lib.action_lib, candidate_actions)
+    return candidate_actions, c
 
 def get_input(env, fix_action_space, plan_step=None):
     # candidate_actions = print_candidate_actions(env)
     while True:
-        if(fix_action_space):
-            candidate_actions = env.action_lib.all_actions
-        else:
-            candidate_actions = env.action_lib.get_candidate_actions(env.obs['inventory'])
-        candidate_actions = print_candidate_actions(env.action_lib.action_lib, candidate_actions)
+
+        candidate_actions, _ = get_candidate_action(env, fix_action_space)
         
+        global user_input
         if(plan_step is None):
-            user_input = input("Choose the No. or Name of the action: ")
+            info_list = ["Choose the No. or Name of the action: "]
+            #user_input = input()
         else:
             user_input = plan_step["type"]+"_"+plan_step["text"]
-            print("The agent 's choice: {}".format(user_input))
+            #print("The agent 's choice: {}".format(user_input))
         
         action = None
         if user_input.isdigit():
@@ -43,7 +114,7 @@ def get_input(env, fix_action_space, plan_step=None):
                 action = candidate_actions[int(user_input)]
                 break  
             else:
-                print('Invalid Input!')
+                info_list.append('\nInvalid Input!')
                 if(plan_step is not None):
                     break
         else:
@@ -51,10 +122,10 @@ def get_input(env, fix_action_space, plan_step=None):
                 action = user_input
                 break
             else:
-                print('Invalid Input!')
+                info_list.append('\nInvalid Input!')
                 if(plan_step is not None):
                     break
-    return action
+    return action, info_list
 
 if __name__ == '__main__':
     
@@ -74,7 +145,6 @@ if __name__ == '__main__':
     if(task_setting is None):
         raise ValueError("Task Not Found!")
     
-    print("Task: {}!".format(task_setting['description']))
     env = Env(
         task_name = task_setting["description"],
         init_inv = task_setting["env"]["init_inventory"], 
@@ -88,15 +158,10 @@ if __name__ == '__main__':
             plans = json.load(j) 
         plan = plans[args.task_name]
     
-    j = 0
-    for i in range(MAXIMUM_STEP):
-        
-        print(f"\n\n\n\nTask:{env.task_name}   Step: {env.curr_step}/{MAXIMUM_STEP}   Reward: {env.reward}")
-        print("")
-        env.print_obs()
-        print("")
-        
-        if plan is not None:
+    if plan is not None:
+        j = 0
+        done = 0
+        while j<len(plan):
             goal_reached = 1
             if "goal" in plan[j]:
                 for item in plan[j]["goal"]:
@@ -104,19 +169,37 @@ if __name__ == '__main__':
                         goal_reached = 0
                         break
             j = j+goal_reached
-            if(j>=len(plan)):
-                print("Task Failed!")
+            if(env.curr_step>=MAXIMUM_STEP):
+                print("Fail: Your steps are used up!")
                 break
-            action = get_input(env, args.fix_action_space, plan[j])
-        else:
-            action = get_input(env, args.fix_action_space)
+            candidate_actions, _ = get_candidate_action(env, args.fix_action_space)
+            action = plan[j]["type"]+"_"+plan[j]["text"]
+            if action not in candidate_actions:
+                print(f"Fail: invalid action:'{action}'")
+            obs, reward, done, info = env.step(action)
+            if done:
+                print("Done!")
+                break
+        if not done:
+            print("Fail: Plan Finished!")
             
-        if action == None:
-            print("Task Failed!")
-            break
-        obs, reward, done, info = env.step(action)
-        if done:
-            print("\n\n\n\n")
-            env.print_obs()
-            print("Task Finished!")
-            break
+    else:
+        with ptg.WindowManager() as manager:
+            step = 0
+            _, c = get_candidate_action(env, args.fix_action_space)
+            obs_container = env.print_obs()
+            info_list = "Please choose your action"
+            window = Window(
+                f"[bold blue]Task: {env.task_name}",
+                f"Step: {env.curr_step}/{MAXIMUM_STEP}   Reward: {env.reward}",
+                obs_container,
+                c,
+                info_list,
+                width=150
+            )
+
+            window.set_title(f"Task:{env.task_name}", position = 0)
+            manager.add(window)
+        
+
+            
